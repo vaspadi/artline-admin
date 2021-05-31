@@ -1,0 +1,17 @@
+.input {
+  font-size: 3.6rem;
+  background-color: $item-bg;
+  padding: 0.556em;
+  border: none;
+  border-radius: 3em 0 0 3em;
+  color: $text-color;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 0 0.1em $active;
+  }
+  
+  &::placeholder {
+    color: $text-color;
+  }
+}

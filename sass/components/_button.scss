@@ -1,0 +1,16 @@
+.button {
+  width: 100%;
+  max-width: 9.289em;
+  height: 2.472em;
+  font-size: 3.6rem;
+  color: #fff;
+  background-color: $active;
+  border: none;
+  border-radius: 0.5em 0 0.972em 0;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: darken($active, 10%);
+  }
+}

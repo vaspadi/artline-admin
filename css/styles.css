@@ -3,9 +3,11 @@
 ::before {
   font-family: "HelveticaNeue";
   font-weight: 300;
+  color: #4D4D4D;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  outline: 0;
 }
 
 html {
@@ -29,4 +31,101 @@ body {
   font-weight: 700;
   font-display: swap;
   font-style: normal;
+}
+.input {
+  font-size: 3.6rem;
+  background-color: #EDEDED;
+  padding: 0.556em;
+  border: none;
+  border-radius: 3em 0 0 3em;
+  color: #4D4D4D;
+}
+.input:hover, .input:focus {
+  box-shadow: 0 0 0 0.1em #CF2136;
+}
+.input::-moz-placeholder {
+  color: #4D4D4D;
+}
+.input:-ms-input-placeholder {
+  color: #4D4D4D;
+}
+.input::placeholder {
+  color: #4D4D4D;
+}
+
+.button {
+  width: 100%;
+  max-width: 9.289em;
+  height: 2.472em;
+  font-size: 3.6rem;
+  color: #fff;
+  background-color: #CF2136;
+  border: none;
+  border-radius: 0.5em 0 0.972em 0;
+  cursor: pointer;
+}
+.button:hover, .button:focus {
+  background-color: #a31a2b;
+}
+
+.login {
+  height: 100vh;
+  background-color: #F2F2F2;
+  padding-top: 5rem;
+}
+.login__content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 1.5rem;
+}
+.login__logo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 2rem;
+  margin-bottom: 1.5em;
+}
+.login__logo img:first-child {
+  max-width: 4.75em;
+  margin-bottom: 1em;
+}
+.login__logo img:last-child {
+  max-width: 7.389em;
+}
+.login__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 27.556em;
+  font-size: 2rem;
+  background-color: #FFFFFF;
+  padding: 2.25em 0 0 2.25em;
+  border-radius: 0.972em;
+  overflow: hidden;
+}
+.login__input {
+  font-size: 1em;
+  background-color: #F2F2F2;
+}
+.login__input:first-child {
+  margin-bottom: 1.389em;
+}
+.login__input:nth-child(2) {
+  margin-bottom: 0.2em;
+}
+.login__forget-pass {
+  align-self: flex-end;
+  font-size: 0.75em;
+  color: #CF2136;
+  text-decoration: none;
+  margin-bottom: 3em;
+  margin-right: 1.2em;
+}
+.login__forget-pass:hover, .login__forget-pass:focus {
+  text-decoration: underline;
+}
+.login__submit {
+  font-size: 1em;
+  align-self: flex-end;
 }/*# sourceMappingURL=styles.css.map */
