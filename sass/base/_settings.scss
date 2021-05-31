@@ -1,0 +1,17 @@
+*,
+::after,
+::before {
+  font-family: 'HelveticaNeue';
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 0.625em;
+}
+
+body {
+  font-size: 2.4rem;
+}
