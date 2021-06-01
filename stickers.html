@@ -81,61 +81,98 @@
     <div class="section-wrapper">
       <section class="section stickers__section">
         <header class="section__header">
-          <div class="search"><input class="search__input" type="search"></div>
+          <div class="search section__search"><input class="search__input" type="search"></div>
           <button class="button section__button">Новый пак</button>
         </header>
 
+        <ul class="stickers__thead">
+          <li>Название</li>
+          <li>Статус</li>
+          <li>Дата создания</li>
+          <li>Дата релиза</li>
+        </ul>
+
         <div class="stickers__table-wrapper">
           <table class="stickers__table">
-            <thead class="stickers__thead">
-              <tr>
-                <td></td>
-                <td>Название</td>
-                <td>Статус</td>
-                <td>Дата создания</td>
-                <td>Дата релиза</td>
-                <td></td>
-                <td></td>
-              </tr>
-            </thead>
-            <tbody class="stickers__tbody">
-              <tr>
-                <td><div class="stickers__img"><img src="img/stickers/img.jpg" alt="Sticker"></div></td>
-                <td>QUPPY</td>
-                <td class="stickers__status stickers__status_green">В магазине</td>
-                <td>25.05.21</td>
-                <td>28.05.21</td>
+            <tr>
+              <td><div class="stickers__img"><img src="img/stickers/img.jpg" alt="Sticker"></div></td>
+              <td>QUPPY</td>
+              <td class="stickers__status stickers__status_green">В магазине</td>
+              <td>25.05.21</td>
+              <td>28.05.21</td>
               <td><a class="stickers__edit" href="#"><img src="img/stickers/doc.svg" alt="Edit"></a></td>
-                <td><button class="stickers__button-icon"><img src="img/stickers/cancel.svg" alt="cancel"></button></td>
-              </tr>
-              <tr>
-                <td><div class="stickers__img"><img src="img/stickers/img.jpg" alt="Sticker"></div></td>
-                <td>Новый пак</td>
-                <td class="stickers__status stickers__status_red">Не все заполнено!</td>
-                <td>27.05.21</td>
-                <td></td>
+              <td><button class="stickers__button-icon"><img src="img/stickers/cancel.svg" alt="cancel"></button></td>
+            </tr>
+
+            <tr>
+              <td><div class="stickers__img"><img src="img/stickers/img.jpg" alt="Sticker"></div></td>
+              <td>Новый пак</td>
+              <td class="stickers__status stickers__status_red">Не все заполнено!</td>
+              <td>27.05.21</td>
+              <td></td>
               <td><a class="stickers__edit" href="#"><img src="img/stickers/doc.svg" alt="Edit"></a></td>
-                <td><button class="stickers__button-icon"><img src="img/stickers/ok.svg" alt="ok"></button></td>
-              </tr>
-              <tr>
-                <td><div class="stickers__img"><img src="img/stickers/img.jpg" alt="Sticker"></div></td>
-                <td>Hi!Pizza</td>
-                <td class="stickers__status stickers__status_orange">Готов к релизу</td>
-                <td>28.05.21</td>
-                <td></td>
+              <td><button class="stickers__button-icon stickers__button-icon_opacity" disabled><img src="img/stickers/ok.svg" alt="ok"></button></td>
+            </tr>
+
+            <tr>
+              <td><div class="stickers__img"><img src="img/stickers/img.jpg" alt="Sticker"></div></td>
+              <td>Hi!Pizza</td>
+              <td class="stickers__status stickers__status_orange">Готов к релизу</td>
+              <td>28.05.21</td>
+              <td></td>
               <td><a class="stickers__edit" href="#"><img src="img/stickers/doc.svg" alt="Edit"></a></td>
-                <td><button class="stickers__button-icon"><img src="img/stickers/ok.svg" alt="ok"></button></td>
-              </tr>
-              <tr>
-                <td><div class="stickers__img"><img src="img/stickers/img.jpg" alt="Sticker"></div></td>
-                <td>QUPPY</td>
-                <td class="stickers__status stickers__status_green">В магазине</td>
-                <td>25.05.21</td>
-                <td>28.05.21</td>
+              <td><button class="stickers__button-icon"><img src="img/stickers/ok.svg" alt="ok"></button></td>
+            </tr>
+
+            <tr>
+              <td><div class="stickers__img"><img src="img/stickers/img.jpg" alt="Sticker"></div></td>
+              <td>Новый пак</td>
+              <td class="stickers__status stickers__status_red">Не все заполнено!</td>
+              <td>27.05.21</td>
+              <td></td>
               <td><a class="stickers__edit" href="#"><img src="img/stickers/doc.svg" alt="Edit"></a></td>
-                <td><button class="stickers__button-icon"><img src="img/stickers/cancel.svg" alt="cancel"></button></td>
-              </tr>
-            </tbody>
+              <td><button class="stickers__button-icon stickers__button-icon_opacity" disabled><img src="img/stickers/ok.svg" alt="ok"></button></td>
+            </tr>
+
+            <tr>
+              <td><div class="stickers__img"><img src="img/stickers/img.jpg" alt="Sticker"></div></td>
+              <td>Hi!Pizza</td>
+              <td class="stickers__status stickers__status_orange">Готов к релизу</td>
+              <td>28.05.21</td>
+              <td></td>
+              <td><a class="stickers__edit" href="#"><img src="img/stickers/doc.svg" alt="Edit"></a></td>
+              <td><button class="stickers__button-icon"><img src="img/stickers/ok.svg" alt="ok"></button></td>
+            </tr>
+
+            <tr>
+              <td><div class="stickers__img"><img src="img/stickers/img.jpg" alt="Sticker"></div></td>
+              <td>Новый пак</td>
+              <td class="stickers__status stickers__status_red">Не все заполнено!</td>
+              <td>27.05.21</td>
+              <td></td>
+              <td><a class="stickers__edit" href="#"><img src="img/stickers/doc.svg" alt="Edit"></a></td>
+              <td><button class="stickers__button-icon stickers__button-icon_opacity" disabled  ><img src="img/stickers/ok.svg" alt="ok"></button></td>
+            </tr>
+
+            <tr>
+              <td><div class="stickers__img"><img src="img/stickers/img.jpg" alt="Sticker"></div></td>
+              <td>Hi!Pizza</td>
+              <td class="stickers__status stickers__status_orange">Готов к релизу</td>
+              <td>28.05.21</td>
+              <td></td>
+              <td><a class="stickers__edit" href="#"><img src="img/stickers/doc.svg" alt="Edit"></a></td>
+              <td><button class="stickers__button-icon"><img src="img/stickers/ok.svg" alt="ok"></button></td>
+            </tr>
+
+            <tr>
+              <td><div class="stickers__img"><img src="img/stickers/img.jpg" alt="Sticker"></div></td>
+              <td>QUPPY</td>
+              <td class="stickers__status stickers__status_green">В магазине</td>
+              <td>25.05.21</td>
+              <td>28.05.21</td>
+              <td><a class="stickers__edit" href="#"><img src="img/stickers/doc.svg" alt="Edit"></a></td>
+              <td><button class="stickers__button-icon"><img src="img/stickers/cancel.svg" alt="cancel"></button></td>
+            </tr>
           </table>
         </div>
       </section>

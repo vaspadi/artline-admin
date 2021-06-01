@@ -17,7 +17,11 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding-left: 2.708em;
+    padding-left: 2em;
+  }
+
+  &__search {
+    font-size: 0.708em;
   }
 
   &__button {

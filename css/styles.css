@@ -199,7 +199,10 @@ table {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding-left: 2.708em;
+  padding-left: 2em;
+}
+.section__search {
+  font-size: 0.708em;
 }
 .section__button {
   margin-left: auto;
@@ -270,50 +273,78 @@ table {
 .stickers {
   display: flex;
   height: 100vh;
-  font-size: 2.4rem;
   background-color: #F2F2F2;
+}
+.stickers__thead {
+  display: flex;
+  font-size: 1.7rem;
+  text-align: center;
+  background-color: #F2F2F2;
+  padding: 1.412em 0;
+  padding-left: 8.235em;
+  margin-top: 2.647em;
+}
+.stickers__thead li {
+  font-weight: 500;
+}
+.stickers__thead li:nth-child(1) {
+  width: 12.5em;
+  -moz-text-align-last: left;
+       text-align-last: left;
+}
+.stickers__thead li:nth-child(2) {
+  width: 17.529em;
+}
+.stickers__thead li:nth-child(3) {
+  width: 7.4705em;
+}
+.stickers__thead li:nth-child(4) {
+  width: 14em;
 }
 .stickers__table-wrapper {
   max-height: 20em;
+  font-size: 1.7rem;
   overflow-y: auto;
+}
+.stickers__table-wrapper::-webkit-scrollbar {
+  width: 0.294em;
+  background-color: transparent;
+}
+.stickers__table-wrapper::-webkit-scrollbar-track {
+  margin-bottom: 1.176em;
+}
+.stickers__table-wrapper::-webkit-scrollbar-thumb {
+  background-color: #CF2136;
+  border-radius: 0.588em;
 }
 .stickers__table {
   width: 100%;
   text-align: center;
-  margin-top: 4.5rem;
 }
 .stickers__table td:nth-child(2) {
   text-align: left;
 }
-.stickers__thead {
-  background-color: #F2F2F2;
-}
-.stickers__thead td {
-  font-size: 1.7rem;
-  font-weight: 500;
-  padding: 1.4em 0;
-}
-.stickers__tbody tr:nth-child(1) td {
+.stickers__table tr:nth-child(1) td {
   padding-top: 1.6em;
 }
-.stickers__tbody td {
+.stickers__table td {
   font-size: 1.7rem;
   font-weight: 400;
-  padding: 0.8rem 0;
+  padding: 0.4706em 0;
 }
-.stickers__tbody td:nth-child(1) {
+.stickers__table td:nth-child(1) {
   width: 8.1em;
 }
-.stickers__tbody td:nth-child(2) {
+.stickers__table td:nth-child(2) {
   width: 12.5em;
 }
-.stickers__tbody td:nth-child(2), .stickers__tbody td:nth-child(3) {
+.stickers__table td:nth-child(2), .stickers__table td:nth-child(3) {
   font-weight: 700;
 }
-.stickers__tbody td:nth-child(5) {
+.stickers__table td:nth-child(5) {
   width: 14em;
 }
-.stickers__tbody td:nth-child(7) {
+.stickers__table td:nth-child(7) {
   width: 7.5em;
 }
 .stickers__img {
@@ -335,14 +366,25 @@ table {
   display: inline-block;
   width: 1.4em;
 }
+.stickers__edit:hover, .stickers__edit:focus {
+  filter: brightness(50%);
+}
 .stickers__edit img {
   width: 100%;
 }
 .stickers__button-icon {
-  width: 3em;
+  width: 2.7em;
+  font-size: 1.7rem;
   background-color: transparent;
   padding: 0.5em;
   border: none;
+  cursor: pointer;
+}
+.stickers__button-icon_opacity {
+  opacity: 0.5;
+}
+.stickers__button-icon:hover, .stickers__button-icon:focus {
+  filter: brightness(50%);
 }
 .stickers__button-icon img {
   width: 100%;
