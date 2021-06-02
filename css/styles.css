@@ -76,11 +76,16 @@ table {
 }
 
 .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   max-width: 9.289em;
   height: 2.472em;
   font-size: 2.4rem;
   color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
   background-color: #CF2136;
   border: none;
   border-radius: 0 0.972em 0 0.5em;
@@ -276,6 +281,7 @@ table {
 .login__submit {
   font-size: 1em;
   align-self: flex-end;
+  text-transform: none;
 }
 
 .stickers {
