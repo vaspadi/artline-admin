@@ -80,9 +80,10 @@ table {
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 9.289em;
-  height: 2.472em;
-  font-size: 2.4rem;
+  max-width: 13.8em;
+  height: 3.6em;
+  font-size: 1.7rem;
+  font-weight: 500;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
@@ -96,6 +97,33 @@ table {
 }
 .button_bottom-right {
   border-radius: 0.5em 0 0.972em 0;
+}
+
+.toggle {
+  display: inline-flex;
+}
+.toggle__button {
+  font-size: 1.7rem;
+  font-weight: 300;
+  text-transform: lowercase;
+  background-color: #F2F2F2;
+  border: none;
+  padding: 0.6em 1.5em;
+  cursor: pointer;
+}
+.toggle__button:hover, .toggle__button:focus {
+  color: #FFFFFF;
+  background-color: #CF2136;
+}
+.toggle__button_right {
+  border-radius: 0 3em 3em 0;
+}
+.toggle__button_left {
+  border-radius: 3em 0 0 3em;
+}
+.toggle__button_active {
+  color: #FFFFFF;
+  background-color: #CF2136;
 }
 
 .search {
@@ -187,9 +215,11 @@ table {
 }
 
 .section {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   max-width: 50em;
-  min-height: 12.5em;
+  min-height: 21.5em;
   font-size: 2.4rem;
   background-color: #FFFFFF;
   border-radius: 0.972em;
@@ -219,6 +249,32 @@ table {
 }
 .section__button {
   margin-left: auto;
+}
+
+.add-stickers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+  font-size: 1.7rem;
+  padding-bottom: 4em;
+}
+.add-stickers__text {
+  font-size: 0.97em;
+  font-weight: 500;
+}
+.add-stickers__button {
+  font-size: 1em;
+  font-weight: 700;
+  color: #CF2136;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.add-stickers__button:hover, .add-stickers__button:focus {
+  color: #e86e7d;
 }
 
 .login {
@@ -279,7 +335,10 @@ table {
   text-decoration: underline;
 }
 .login__submit {
+  max-width: 9.289em;
+  height: 2.472em;
   font-size: 1em;
+  font-weight: 300;
   align-self: flex-end;
   text-transform: none;
 }
@@ -402,4 +461,36 @@ table {
 }
 .stickers__button-icon img {
   width: 100%;
+}
+
+.create {
+  display: flex;
+  background-color: #F2F2F2;
+}
+.create__nav {
+  font-size: 2.4rem;
+  background-color: #F2F2F2;
+  margin-top: 4.5rem;
+}
+.create__nav-list {
+  display: flex;
+  padding-left: 4.7rem;
+}
+.create__nav-button {
+  font-size: 1.7rem;
+  font-weight: 500;
+  background-color: transparent;
+  padding: 2.7rem 2.5rem 1.8rem 2.5rem;
+  border-bottom: 0.3rem solid transparent;
+  border: none;
+  margin-right: 4.5rem;
+  cursor: pointer;
+}
+.create__nav-button:hover, .create__nav-button:focus {
+  color: #FFFFFF;
+  background-color: #CF2136;
+  border-bottom: 0.3rem solid #CF2136;
+}
+.create__nav-button_active {
+  border-bottom: 0.3rem solid #CF2136;
 }/*# sourceMappingURL=styles.css.map */

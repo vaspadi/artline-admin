@@ -6,10 +6,13 @@
 // components
 @import 'components/input';
 @import 'components/button';
+@import 'components/toggle';
 @import 'components/search';
 @import 'components/navbar';
 @import 'components/section';
+@import 'components/add-stickers';
 
 // layouts
 @import 'layouts/login';
 @import 'layouts/stickers';
+@import 'layouts/create';

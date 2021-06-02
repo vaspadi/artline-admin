@@ -1,0 +1,31 @@
+.toggle {
+  display: inline-flex;
+  &__button {
+    font-size: 1.7rem;
+    font-weight: 300;
+    text-transform: lowercase;
+    background-color: $page-bg;
+    border: none;
+    padding: 0.6em 1.5em;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      color: #FFFFFF;
+      background-color: $active;
+    }
+
+    &_right {
+      border-radius: 0 3em 3em 0;
+    }
+
+    &_left {
+      border-radius: 3em 0 0 3em;
+    }
+
+    &_active {
+      color: #FFFFFF;
+      background-color: $active;
+    }
+  }
+}

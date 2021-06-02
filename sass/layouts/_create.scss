@@ -1,0 +1,38 @@
+.create {
+  display: flex;
+  background-color: $page-bg;
+
+  &__nav {
+    font-size: 2.4rem;
+    background-color: $page-bg;
+    margin-top: 4.5rem;
+  }
+
+  &__nav-list {
+    display: flex;
+    padding-left: 4.7rem;
+  }
+
+  &__nav-button {
+    font-size: 1.7rem;
+    font-weight: 500;
+    background-color: transparent;
+    padding: 2.7rem 2.5rem 1.8rem 2.5rem;
+    border-bottom: 0.3rem solid transparent;
+    
+    border: none;
+    margin-right: 4.5rem;
+    cursor: pointer;
+    
+    &:hover,
+    &:focus {
+      color: #FFFFFF;
+      background-color: $active;
+      border-bottom: 0.3rem solid $active;
+    }
+    
+    &_active {
+      border-bottom: 0.3rem solid $active;
+    }
+  }
+}
