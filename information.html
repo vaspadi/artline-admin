@@ -110,8 +110,17 @@
               <div class="information__id-block">
                 <input type="text" class="input" placeholder="Id">
                 <div class="information__id-block-radio">
-                  <label><input type="radio" name="price">Платный</label>
-                  <label><input type="radio" name="price" checked>Бесплатный</label>
+                  <label class="radio">
+                    <input class="radio__input" type="radio" name="price">
+                    <span class="radio__pseudo-radio"></span>
+                    Платный
+                  </label>
+                  
+                  <label class="radio">
+                    <input class="radio__input" type="radio" name="price" checked>
+                    <span class="radio__pseudo-radio"></span>
+                    Бесплатный
+                  </label>
                 </div>
                 <input type="text" class="input" placeholder="Id покупки">
               </div>
@@ -119,10 +128,14 @@
               <div class="information__info-block">
                 <div class="information__info-block-row">
                   <input type="text" class="input" placeholder="Название пака">
-                  <select name="lang">
-                    <option value="ru">Русский</option>
-                    <option value="en">English</option>
-                  <select>
+                  <div class="select-wrapper">
+                    <select class="select" name="lang">
+                      <option class="select__option" value="ru">Русский</option>
+                      <option class="select__option" value="ru">Русский</option>
+                      <option class="select__option" value="en">English</option>
+                      <option class="select__option" value="en">English</option>
+                    <select>
+                  </div>
                 </div>
                 <textarea class="input input_big" placeholder="Описание пака"></textarea>
               </div>
@@ -148,7 +161,11 @@
                   <div class="information__add-block-size">375x225 .PNG</div>
                 </li>
                 <li class="information__add-block-item information__add-block-item_banner">
-                  <label><input type="checkbox">Рекламный баннер</label>
+                  <label class="radio">
+                    <input class="radio__input" type="checkbox">
+                    <span class="radio__pseudo-radio"></span>
+                    Рекламный баннер
+                  </label>
                   <button class="add-button add-button_big"><img src="img/add.svg" alt=""></button>
                   <div class="information__add-block-size">375x251 .PNG</div>
                 </li>
@@ -164,18 +181,26 @@
             <div class="information__row information__row_margin">
               <label for="" class="information__select-label">
                 Категория:
-                <select name="category">
-                  <option value="">Инфлюенсеры</option>
-                  <option value="">Тест</option>
-                </select>
+                <div class="select-wrapper">
+                  <select class="select" name="category">
+                    <option class="select__option" value="">Инфлюенсеры</option>
+                    <option class="select__option" value="">Инфлюенсеры</option>
+                    <option class="select__option" value="">Тест</option>
+                    <option class="select__option" value="">Тест</option>
+                  </select>
+                </div>
               </label>
 
               <label for="" class="information__select-label">
                 Страна:
-                <select name="county">
-                  <option value="">Весь мир</option>
-                  <option value="">Тест</option>
-                </select>
+                <div class="select-wrapper">
+                  <select class="select" name="county">
+                    <option class="select__option" value="">Весь мир</option>
+                    <option class="select__option" value="">Весь мир</option>
+                    <option class="select__option" value="">Тест</option>
+                    <option class="select__option" value="">Тест</option>
+                  </select>
+                </div>
               </label>
             </div>
 

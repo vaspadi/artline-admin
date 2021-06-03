@@ -37,10 +37,6 @@
     justify-content: space-between;
     padding-left: 2rem;
     padding-right: 6rem;
-
-    input {
-      margin-right: 1rem;
-    }
   }
   
   &__info-block {
@@ -84,7 +80,8 @@
     padding-top: 0;
 
     label {
-      height: 1.8em;
+      height: 0;
+      padding-bottom: 1.8em;
       margin-right: auto;
     }
     

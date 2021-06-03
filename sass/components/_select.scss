@@ -1,0 +1,42 @@
+.select {
+  color: $active;
+  background-color: $page-bg;
+  border: none;
+  border-radius: 2em;
+  padding: 0.5em 1em;
+  padding-right: 3em;
+  appearance: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: darken($page-bg, 10%);
+  }
+
+  &-wrapper {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      // top: 50%;
+      bottom: 45%;
+      right: 0.8em;
+      width: 0.4em;
+      height: 0.4em;
+      border-right: 0.05em solid $active;
+      border-bottom: 0.05em solid $active;
+      transform: rotate(45deg);
+    }
+  }
+
+  &__option {
+    background-color: #FFFFFF;
+
+    &:hover,
+    &:focus {
+      color: #FFFFFF;
+      background-color: $active;
+    }
+  }
+}

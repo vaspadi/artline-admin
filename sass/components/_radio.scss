@@ -1,0 +1,35 @@
+.radio {
+  display: flex;
+  align-items: center;
+
+  &:hover,
+  &:focus {
+    .radio__pseudo-radio {
+      background-color: darken($page-bg, 10%);
+      border-color: darken($page-bg, 10%);
+    }
+  }
+
+  &__input {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    z-index: -1;
+
+    &[type=radio]:checked + span,
+    &[type=checkbox]:checked + span {
+      background-color: $active;
+    }
+  }
+  
+  &__pseudo-radio {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-color: $page-bg;
+    border: 0.2em solid $page-bg;
+    border-radius: 50%;
+    margin-right: 0.5em;
+  }
+}
