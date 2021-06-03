@@ -2,11 +2,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 7em;
-  height: 7em;
+  width: 5.5em;
+  height: 5.5em;
+  font-size: inherit;
   background-color: $page-bg;
   border: none;
-  border-radius: 1.5em;
+  border-radius: 1.2em;
   cursor: pointer;
 
   &:hover,
@@ -15,35 +16,36 @@
   }
 
   &_small {
-    width: 2.5em;
-    height: 2.5em;
+    width: 1.8em;
+    height: 1.8em;
     background-color: transparent;
   }
   
   &_circle {
     border-radius: 50%;
-    width: 4.5em;
-    height: 4.5em;
+    width: 3.65em;
+    height: 3.65em;
   }
 
   &_rectangle {
-    width: 16.6em;
-    height: 5em;
-    border-radius: 0.708em;
+    width: 12.85em;
+    height: 4.15em;
+    border-radius: 0.5em;
   }
   
   &_middle {
-    width: 19.5em;
-    height: 11.5em;
+    width: 15.2em;
+    height: 9.1em;
+    border-radius: 0.5em;
   }
   
   &_big {
-    width: 19.5em;
-    height: 13em;
-    border-radius: 0.708em;
+    width: 15.2em;
+    height: 10.2em;
+    border-radius: 0.5em;
   }
 
   img {
-    width: 2.5em;
+    width: 1.8em;
   }
 }

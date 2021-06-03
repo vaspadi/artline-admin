@@ -85,12 +85,13 @@ table {
 }
 
 .select {
+  font-size: inherit;
   color: #CF2136;
   background-color: #F2F2F2;
   border: none;
-  border-radius: 2em;
+  border-radius: 0.9em;
   padding: 0.5em 1em;
-  padding-right: 3em;
+  padding-right: 1.7em;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -98,6 +99,9 @@ table {
 }
 .select:hover, .select:focus {
   background-color: #d9d9d9;
+}
+.select_big {
+  padding-right: 7.5em;
 }
 .select-wrapper {
   position: relative;
@@ -107,8 +111,8 @@ table {
   position: absolute;
   bottom: 45%;
   right: 0.8em;
-  width: 0.4em;
-  height: 0.4em;
+  width: 0.5em;
+  height: 0.5em;
   border-right: 0.05em solid #CF2136;
   border-bottom: 0.05em solid #CF2136;
   transform: rotate(45deg);
@@ -176,42 +180,44 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 7em;
-  height: 7em;
+  width: 5.5em;
+  height: 5.5em;
+  font-size: inherit;
   background-color: #F2F2F2;
   border: none;
-  border-radius: 1.5em;
+  border-radius: 1.2em;
   cursor: pointer;
 }
 .add-button:hover, .add-button:focus {
   background-color: #d9d9d9;
 }
 .add-button_small {
-  width: 2.5em;
-  height: 2.5em;
+  width: 1.8em;
+  height: 1.8em;
   background-color: transparent;
 }
 .add-button_circle {
   border-radius: 50%;
-  width: 4.5em;
-  height: 4.5em;
+  width: 3.65em;
+  height: 3.65em;
 }
 .add-button_rectangle {
-  width: 16.6em;
-  height: 5em;
-  border-radius: 0.708em;
+  width: 12.85em;
+  height: 4.15em;
+  border-radius: 0.5em;
 }
 .add-button_middle {
-  width: 19.5em;
-  height: 11.5em;
+  width: 15.2em;
+  height: 9.1em;
+  border-radius: 0.5em;
 }
 .add-button_big {
-  width: 19.5em;
-  height: 13em;
-  border-radius: 0.708em;
+  width: 15.2em;
+  height: 10.2em;
+  border-radius: 0.5em;
 }
 .add-button img {
-  width: 2.5em;
+  width: 1.8em;
 }
 
 .search {
@@ -521,7 +527,7 @@ table {
   display: flex;
   flex-direction: column;
   font-size: 1.7rem;
-  padding: 1.7em 7.5rem 7rem 3.5rem;
+  padding: 1.7em 4.412em 4.118em 2.059em;
 }
 .information__title {
   font-size: 1.01em;
@@ -542,30 +548,34 @@ table {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 15.5rem;
+  min-height: 9.118em;
   margin-bottom: 1.7em;
 }
 .information__id-block-radio {
   display: flex;
   justify-content: space-between;
-  padding-left: 2rem;
-  padding-right: 6rem;
+  padding-left: 1.176em;
+  padding-right: 3.529em;
 }
 .information__info-block {
   flex-basis: 64%;
   display: flex;
   flex-direction: column;
-  min-height: 15.5rem;
+  min-height: 9.118em;
   margin-bottom: 1.7em;
+}
+.information__info-block-select {
+  font-size: 1.1em;
+  background-color: transparent;
 }
 .information__info-block-row {
   display: flex;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1.76em;
 }
 .information__info-block-row input {
-  flex-basis: 36rem;
-  margin-right: 2rem;
+  flex-basis: 21.176em;
+  margin-right: 1.176em;
 }
 .information__info-block-row select {
   display: inline-block;
