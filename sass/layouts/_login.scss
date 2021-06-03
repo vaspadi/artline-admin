@@ -44,6 +44,12 @@
   &__input {
     font-size: 1em;
     background-color: $page-bg;
+    padding: 0.556em;
+    border-radius: 3em 0 0 3em;
+
+    &::placeholder {
+      text-transform: none;
+    }
 
     &:first-child {
       margin-bottom: 1.389em;

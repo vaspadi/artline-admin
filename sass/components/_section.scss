@@ -41,4 +41,22 @@
   &__button {
     margin-left: auto;
   }
+
+  &__content {
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: 0.294em;
+      background-color: transparent; 
+    }
+
+    &::-webkit-scrollbar-track {
+      margin-bottom: 1.176em;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+      background-color: $active;
+      border-radius: 0.588em;
+    }
+  }
 }
