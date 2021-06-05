@@ -8,6 +8,12 @@
   background-color: $component-bg;
   padding: 1.038em 0 1.577em;
 
+  &_fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
   &__logo {
     margin-left: 2.231em;
     margin-bottom: 0.5em;

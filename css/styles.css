@@ -307,6 +307,11 @@ table {
   background-color: #FFFFFF;
   padding: 1.038em 0 1.577em;
 }
+.navbar_fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 .navbar__logo {
   margin-left: 2.231em;
   margin-bottom: 0.5em;
@@ -364,6 +369,9 @@ table {
   font-size: 2.4rem;
   background-color: #FFFFFF;
   border-radius: 0.972em;
+}
+.section_height {
+  max-height: none;
 }
 .section-wrapper {
   display: flex;
@@ -783,6 +791,51 @@ table {
   text-align: center;
 }
 
+.analitics-table__thead {
+  background-color: #F2F2F2;
+}
+.analitics-table__thead td {
+  padding: 1.5rem 0 1rem;
+}
+.analitics-table__thead td:nth-child(3) {
+  display: flex;
+  align-items: center;
+  font-size: 1.1em;
+}
+.analitics-table__search {
+  font-size: 0.9em;
+}
+.analitics-table__tbody td {
+  padding: 1.5rem 0;
+}
+.analitics-table td {
+  padding: 1.5rem 0;
+}
+.analitics-table td:first-child {
+  width: 1rem;
+  padding-left: 4rem;
+}
+.analitics-table td:last-child {
+  padding-right: 4rem;
+}
+.analitics-table td:nth-child(2) {
+  text-align: center;
+}
+.analitics-table td:nth-child(3) {
+  font-weight: 500;
+}
+.analitics-table td:nth-child(3) span {
+  margin-right: 1.5rem;
+  font-weight: 500;
+}
+.analitics-table td:nth-child(4), .analitics-table td:nth-child(5) {
+  width: 20rem;
+  text-align: center;
+}
+.analitics-table__img {
+  max-width: 5rem;
+}
+
 .login {
   height: 100vh;
   background-color: #F2F2F2;
@@ -1032,6 +1085,38 @@ table {
 }
 
 .analitics {
-  display: flex;
   background-color: #F2F2F2;
+  padding-top: 12rem;
+  margin-left: 25.8rem;
+}
+.analitics__wrapper {
+  padding-bottom: 5rem;
+  padding-top: 0;
+}
+.analitics__logo {
+  position: fixed;
+  top: 0;
+  left: 25.8rem;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #F2F2F2;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  padding-right: 25.8rem;
+  margin: 0;
+}
+.analitics__logo img {
+  width: 18.4rem;
+}
+.analitics__chart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  min-height: 20rem;
+}
+.analitics__analitics-table {
+  font-size: 1.7rem;
 }/*# sourceMappingURL=styles.css.map */

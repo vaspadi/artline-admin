@@ -1,4 +1,41 @@
 .analitics {
-  display: flex;
   background-color: $page-bg;
+  padding-top: 12rem;
+  margin-left: 25.8rem;
+
+  &__wrapper {
+    padding-bottom: 5rem;
+    padding-top: 0;
+  }
+
+  &__logo {
+    position: fixed;
+    top: 0;
+    left: 25.8rem;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: $page-bg;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    padding-right: 25.8rem;
+    margin: 0;
+
+    img {
+      width: 18.4rem;
+    }
+  }
+
+  &__chart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    min-height: 20rem;
+  }
+
+  &__analitics-table {
+    font-size: 1.7rem;
+  }
 }

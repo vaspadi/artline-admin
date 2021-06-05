@@ -8,6 +8,10 @@
   font-size: 2.4rem;
   background-color: $component-bg;
   border-radius: 0.972em;
+
+  &_height {
+    max-height: none;
+  }
   
   &-wrapper {
     display: flex;
