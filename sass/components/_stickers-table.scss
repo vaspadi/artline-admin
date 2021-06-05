@@ -1,0 +1,74 @@
+.stickers-table {
+  &__thead {
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    background-color: $page-bg;
+    padding: 1.5rem 4rem 1rem;
+  }
+
+  // &__content {
+  //   max-height: 20rem;
+  // }
+  
+  &__thead-item {
+    font-weight: 500;
+
+    &:nth-child(2) {
+      flex-shrink: 0.7;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      max-width: 52rem;
+      margin-left: 10rem;
+
+      span {
+        font-weight: 500;
+        margin-right: 1.7rem;
+      }
+    }
+
+    &:nth-child(3),
+    &:nth-child(4),
+    &:nth-child(5) {
+      width: 100%;
+      max-width: 15rem;
+      text-align: center;
+    }
+  }
+
+  &__search {
+    font-size: 1em;
+  }
+
+  &__content {
+    padding: 0 4rem;
+  }
+
+  &__table {
+    td {
+      padding: 1.5rem 0;
+
+      &:nth-child(2) {
+        width: 10rem;
+        display: flex;
+        justify-content: center;
+
+        img {
+          max-width: 5rem;
+        }
+      }
+
+      &:nth-child(3) {
+        width: 53rem;
+      }
+
+      &:nth-child(4),
+      &:nth-child(5),
+      &:nth-child(6) {
+        width: 15rem;
+        text-align: center;
+      }
+    }
+  }
+}

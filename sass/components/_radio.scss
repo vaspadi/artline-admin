@@ -5,8 +5,8 @@
   &:hover,
   &:focus {
     .radio__pseudo-radio {
-      background-color: darken($page-bg, 10%);
-      border-color: darken($page-bg, 10%);
+      background-color: darken($page-bg, 20%);
+      border-color: darken($page-bg, 20%);
     }
   }
 
@@ -27,8 +27,8 @@
     display: inline-block;
     width: 1em;
     height: 1em;
-    background-color: $page-bg;
-    border: 0.2em solid $page-bg;
+    background-color: darken($page-bg, 10%);
+    border: 0.2em solid darken($page-bg, 10%);
     border-radius: 50%;
     margin-right: 0.5em;
   }
