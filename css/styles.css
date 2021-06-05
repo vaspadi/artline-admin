@@ -1029,4 +1029,9 @@ table {
 }
 .finance__stickers-table {
   font-size: 1.7rem;
+}
+
+.analitics {
+  display: flex;
+  background-color: #F2F2F2;
 }/*# sourceMappingURL=styles.css.map */
