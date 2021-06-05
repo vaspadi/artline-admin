@@ -3,6 +3,9 @@
 @import 'base/settings';
 @import 'base/fonts';
 
+// abstract
+@import 'abstract/scroll';
+
 // components
 @import 'components/input';
 @import 'components/select';
@@ -19,8 +22,11 @@
 @import 'components/stickers-list';
 @import 'components/information';
 @import 'components/additional-links';
+@import 'components/total-table';
+@import 'components/finance-table';
 
 // layouts
 @import 'layouts/login';
 @import 'layouts/stickers';
 @import 'layouts/create';
+@import 'layouts/finance';

@@ -1,0 +1,12 @@
+.finance {
+  display: flex;
+  background-color: $page-bg;
+
+  &__total-table {
+    font-size: 2.5rem;
+  }
+
+  &__table {
+    font-size: 1.7rem;
+  }
+}
