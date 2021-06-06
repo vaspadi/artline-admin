@@ -1215,4 +1215,52 @@ table {
 }
 .analitics__small-section:nth-child(2) {
   width: 100%;
+}
+
+.accounts {
+  display: flex;
+  background-color: #F2F2F2;
+}
+.accounts__table {
+  margin-top: 4.5rem;
+}
+.accounts__thead {
+  background-color: #F2F2F2;
+  padding: 0 1.5rem;
+}
+.accounts__thead td {
+  font-weight: 500;
+  padding: 2.3rem 0;
+}
+.accounts__tbody td {
+  padding-top: 3rem;
+}
+.accounts td {
+  font-size: 1.7rem;
+  padding-right: 3rem;
+}
+.accounts td:first-child {
+  padding-left: 5rem;
+}
+.accounts td:last-child {
+  padding-right: 5rem;
+}
+.accounts__input {
+  width: 100%;
+  margin-right: 3rem;
+}
+.accounts__img {
+  width: 5rem;
+  border-radius: 50%;
+}
+.accounts__img:nth-child(2) {
+  position: relative;
+  left: -17%;
+}
+.accounts__select-wrapper::after {
+  right: 1.1em;
+}
+.accounts__select {
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
 }/*# sourceMappingURL=styles.css.map */

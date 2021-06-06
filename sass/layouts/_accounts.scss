@@ -1,0 +1,63 @@
+.accounts {
+  display: flex;
+  background-color: $page-bg;
+
+  &__table {
+    margin-top: 4.5rem;
+  }
+
+  &__thead {
+    background-color: $page-bg;
+    padding: 0 1.5rem;
+
+    td {
+      font-weight: 500;
+      padding: 2.3rem 0;
+    }
+  }
+
+  &__tbody {
+    td {
+      padding-top: 3rem;
+    }
+  }
+
+  td {
+    font-size: 1.7rem;
+    padding-right: 3rem;
+
+    &:first-child {
+      padding-left: 5rem;
+    }
+
+    &:last-child {
+      padding-right: 5rem;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    margin-right: 3rem;
+  }
+
+  &__img {
+    width: 5rem;
+    border-radius: 50%;
+
+    &:nth-child(2) {
+      position: relative;
+      left: -17%;
+    }
+  }
+
+  &__select-wrapper {
+    &::after {
+      right: 1.1em;
+    }
+  }
+
+  &__select {
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+  }
+}
