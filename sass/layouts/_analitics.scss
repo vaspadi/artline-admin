@@ -27,6 +27,10 @@
     }
   }
 
+  &__section {
+    margin-bottom: 3rem;
+  }
+
   &__chart {
     display: flex;
     justify-content: center;
@@ -37,5 +41,25 @@
 
   &__analitics-table {
     font-size: 1.7rem;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 50em;
+    font-size: 2.4rem;
+  }
+
+  &__small-section {
+    font-size: 0.9em;
+
+    &:nth-child(1) {
+      margin-right: 4rem;
+    }
+
+    &:nth-child(2) {
+      width: 100%;
+    }
   }
 }

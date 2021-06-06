@@ -297,6 +297,40 @@ table {
   margin-right: 0.5em;
 }
 
+.download-info td:nth-child(2) {
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+.download-info__title {
+  text-align: right;
+  font-size: 0.75em;
+  font-weight: 500;
+}
+.download-info__progress-bar {
+  position: relative;
+  width: 100%;
+  height: 0.5em;
+  background-color: #F2F2F2;
+  border-radius: 2rem;
+}
+.download-info__progress-bar span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  background-color: #CF2136;
+  border-radius: inherit;
+}
+.download-info__procents {
+  width: 5rem;
+  font-size: 0.75em;
+  font-weight: 500;
+  text-align: right;
+}
+
 .navbar {
   display: flex;
   flex-direction: column;
@@ -383,6 +417,7 @@ table {
 .section-logo {
   width: 7.7em;
   margin-bottom: 2.4em;
+  z-index: 5;
 }
 .section-logo img {
   width: 100%;
@@ -836,6 +871,48 @@ table {
   max-width: 5rem;
 }
 
+.small-section {
+  display: flex;
+  flex-direction: column;
+  min-width: 40rem;
+  font-weight: 500;
+  background-color: #FFFFFF;
+  padding: 2.5rem 3.5rem;
+  border-radius: 0.972em;
+}
+.small-section__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.small-section__chart {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+.small-section__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.small-section__img {
+  width: 45%;
+}
+.small-section__table {
+  width: 100%;
+  margin-left: 2.5rem;
+}
+.small-section__download-info {
+  font-size: 1em;
+}
+.small-section__download-info td {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .login {
   height: 100vh;
   background-color: #F2F2F2;
@@ -1110,6 +1187,9 @@ table {
 .analitics__logo img {
   width: 18.4rem;
 }
+.analitics__section {
+  margin-bottom: 3rem;
+}
 .analitics__chart {
   display: flex;
   justify-content: center;
@@ -1119,4 +1199,20 @@ table {
 }
 .analitics__analitics-table {
   font-size: 1.7rem;
+}
+.analitics__row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 50em;
+  font-size: 2.4rem;
+}
+.analitics__small-section {
+  font-size: 0.9em;
+}
+.analitics__small-section:nth-child(1) {
+  margin-right: 4rem;
+}
+.analitics__small-section:nth-child(2) {
+  width: 100%;
 }/*# sourceMappingURL=styles.css.map */
