@@ -167,6 +167,21 @@ table {
   border-radius: 0.5em 0 0.972em 0;
 }
 
+.simple-button {
+  font-size: inherit;
+  font-weight: 500;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  background-color: #CF2136;
+  padding: 1.4rem 2rem;
+  border: none;
+  border-radius: 0.972em;
+  cursor: pointer;
+}
+.simple-button:hover, .simple-button:focus {
+  background-color: #a31a2b;
+}
+
 .toggle {
   display: inline-flex;
 }
@@ -1263,4 +1278,38 @@ table {
 .accounts__select {
   padding-top: 0.8em;
   padding-bottom: 0.8em;
+}
+
+.settings {
+  display: flex;
+  background-color: #F2F2F2;
+}
+.settings__section {
+  padding: 5rem 0;
+}
+.settings__title {
+  background-color: #F2F2F2;
+  font-size: 2.7rem;
+  padding: 1.7rem 4rem;
+}
+.settings__form {
+  padding: 2rem 4rem;
+}
+.settings__input {
+  width: 100%;
+  max-width: 25rem;
+  font-size: 1.7rem;
+  margin-right: 3rem;
+}
+.settings__input::-moz-placeholder {
+  text-transform: none;
+}
+.settings__input:-ms-input-placeholder {
+  text-transform: none;
+}
+.settings__input::placeholder {
+  text-transform: none;
+}
+.settings__submit {
+  font-size: 1.7rem;
 }/*# sourceMappingURL=styles.css.map */

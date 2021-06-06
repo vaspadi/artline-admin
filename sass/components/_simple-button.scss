@@ -1,0 +1,16 @@
+.simple-button {
+  font-size: inherit;
+  font-weight: 500;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  background-color: $active;
+  padding: 1.4rem 2rem;
+  border: none;
+  border-radius: 0.972em;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: darken($active, 10%);
+  }
+}
