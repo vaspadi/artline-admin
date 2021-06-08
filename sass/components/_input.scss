@@ -9,6 +9,15 @@
   overflow: hidden;
   box-shadow: 0 0 0 0.15em transparent;
 
+  &:disabled {
+    opacity: 0.6;
+
+    &:hover,
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
   &_big {
     height: 100%;
   }

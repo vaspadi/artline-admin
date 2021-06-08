@@ -15,5 +15,5 @@ window.addEventListener('DOMContentLoaded', function() {
       
       addStickersText.textContent = "Перетащите и вставьте .WEBP 512x512 px файлы или"
     }
-  })
+  })  
 })

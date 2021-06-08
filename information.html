@@ -111,18 +111,18 @@
                 <input type="text" class="input" placeholder="Id">
                 <div class="information__id-block-radio">
                   <label class="radio">
-                    <input class="radio__input" type="radio" name="price">
+                    <input class="radio__input" value="pay" type="radio" name="price">
                     <span class="radio__pseudo-radio"></span>
                     Платный
                   </label>
 
                   <label class="radio">
-                    <input class="radio__input" type="radio" name="price" checked>
+                    <input class="radio__input" value="price" type="radio" name="price" checked>
                     <span class="radio__pseudo-radio"></span>
                     Бесплатный
                   </label>
                 </div>
-                <input type="text" class="input" placeholder="Id покупки">
+                <input type="text" class="input" id="pay-id" disabled placeholder="Id покупки">
               </div>
               
               <div class="information__info-block">
@@ -162,11 +162,11 @@
                 </li>
                 <li class="information__add-block-item information__add-block-item_banner">
                   <label class="radio">
-                    <input class="radio__input" type="checkbox">
+                    <input class="radio__input" id="banner-checkbox" type="checkbox">
                     <span class="radio__pseudo-radio"></span>
                     Рекламный баннер
                   </label>
-                  <button class="add-button add-button_big"><img src="img/add.svg" alt=""></button>
+                  <button class="add-button add-button_big" id="banner-button" disabled><img src="img/add.svg" alt=""></button>
                   <div class="information__add-block-size">375x251 .PNG</div>
                 </li>
               </ul>
@@ -230,6 +230,7 @@
       </div>
     </div>
   </div>
-</body>
 
+  <script src="js/information.js"></script>
+</body>
 </html>

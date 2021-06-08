@@ -83,6 +83,12 @@ table {
   overflow: hidden;
   box-shadow: 0 0 0 0.15em transparent;
 }
+.input:disabled {
+  opacity: 0.6;
+}
+.input:disabled:hover, .input:disabled:focus {
+  box-shadow: none;
+}
 .input_big {
   height: 100%;
 }
@@ -105,7 +111,7 @@ table {
 .select {
   font-size: inherit;
   color: #CF2136;
-  background-color: #F9F9F9;
+  background-color: #EDEDED;
   border: none;
   border-radius: 0.9em;
   padding: 0.5em 1em;
@@ -116,7 +122,7 @@ table {
   cursor: pointer;
 }
 .select:hover, .select:focus {
-  background-color: #e0e0e0;
+  background-color: #d4d4d4;
 }
 .select_big {
   padding-right: 7.5em;
@@ -216,13 +222,20 @@ table {
   width: 5.5em;
   height: 5.5em;
   font-size: inherit;
-  background-color: #F9F9F9;
+  background-color: #EDEDED;
   border: none;
   border-radius: 1.2em;
   cursor: pointer;
 }
 .add-button:hover, .add-button:focus {
-  background-color: #e0e0e0;
+  background-color: #d4d4d4;
+}
+.add-button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+.add-button:disabled:hover, .add-button:disabled:focus {
+  background-color: #EDEDED;
 }
 .add-button_small {
   width: 1.8em;

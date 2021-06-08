@@ -1,7 +1,7 @@
 .select {
   font-size: inherit;
   color: $active;
-  background-color: $page-bg;
+  background-color: $item-bg;
   border: none;
   border-radius: 0.9em;
   padding: 0.5em 1em;
@@ -11,7 +11,7 @@
 
   &:hover,
   &:focus {
-    background-color: darken($page-bg, 10%);
+    background-color: darken($item-bg, 10%);
   }
 
   &_big {
