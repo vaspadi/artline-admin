@@ -10,10 +10,6 @@
 
   &:hover,
   &:focus {
-    background-color: $page-bg;
-  }
-  
-  &__active {
     font-size: 1em;
     background-color: $page-bg;
 

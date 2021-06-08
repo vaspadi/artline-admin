@@ -501,16 +501,13 @@ table {
   border-radius: 1em;
 }
 .sticker-card:hover, .sticker-card:focus {
-  background-color: #F9F9F9;
-}
-.sticker-card__active {
   font-size: 1em;
   background-color: #F9F9F9;
 }
-.sticker-card__active .sticker-card__add {
+.sticker-card:hover .sticker-card__add, .sticker-card:focus .sticker-card__add {
   display: block;
 }
-.sticker-card__active .sticker-card__footer {
+.sticker-card:hover .sticker-card__footer, .sticker-card:focus .sticker-card__footer {
   display: flex;
 }
 .sticker-card__header {
@@ -594,6 +591,10 @@ table {
   padding: 0.5em 0;
   border-radius: 1em;
   background-color: #F9F9F9;
+  cursor: pointer;
+}
+.stickers-list__add:hover, .stickers-list__add:focus {
+  background-color: #e0e0e0;
 }
 .stickers-list__add img {
   width: 20%;
