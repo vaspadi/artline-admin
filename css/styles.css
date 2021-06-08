@@ -1176,6 +1176,28 @@ table {
   display: flex;
   background-color: #F9F9F9;
 }
+.create__warning {
+  position: relative;
+  color: #CF2136;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  padding-left: 1rem;
+  margin-left: 4rem;
+}
+.create__warning::before {
+  content: "";
+  position: absolute;
+  top: 35%;
+  right: 100%;
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  background-image: url("../img/warning.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: translateY(-50%);
+}
 .create__nav {
   font-size: 2.4rem;
   background-color: #F9F9F9;
@@ -1186,6 +1208,7 @@ table {
   padding-left: 4.7rem;
 }
 .create__nav-button {
+  position: relative;
   font-size: 1.7rem;
   font-weight: 500;
   background-color: transparent;
@@ -1200,8 +1223,24 @@ table {
   background-color: #CF2136;
   border-bottom: 0.3rem solid #CF2136;
 }
+.create__nav-button:hover::before, .create__nav-button:focus::before {
+  display: none;
+}
 .create__nav-button_active {
   border-bottom: 0.3rem solid #CF2136;
+}
+.create__nav-button_warning::before {
+  content: "";
+  position: absolute;
+  top: 2.7rem;
+  left: 0.4rem;
+  display: inline-block;
+  width: 1.7rem;
+  height: 1.7rem;
+  background-image: url("../img/warning.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .finance {
