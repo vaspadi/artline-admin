@@ -172,6 +172,23 @@ table {
 .button_bottom-right {
   border-radius: 0.5em 0 0.972em 0;
 }
+.button_calendar {
+  position: relative;
+}
+.button_calendar::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  display: inline-block;
+  width: 2.7rem;
+  height: 2.7rem;
+  background-image: url("../img/calendar.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
+}
 
 .simple-button {
   font-size: inherit;
