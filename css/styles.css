@@ -494,10 +494,11 @@ table {
 .section-wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   min-height: 100vh;
-  padding: 12rem 1.5rem 2em;
+  padding: 12rem 1.5rem 0;
   margin-left: 25.8rem;
 }
 @media screen and (max-width: 1200px) {
@@ -540,6 +541,16 @@ table {
 }
 .section__button {
   margin-left: auto;
+}
+
+.footer {
+  font-size: 1.4rem;
+  padding: 3.429em 0;
+}
+.footer__text {
+  font-size: 1em;
+  font-weight: 700;
+  color: #7B7B7B;
 }
 
 .add-stickers {
@@ -1065,8 +1076,8 @@ table {
 .login__content {
   display: flex;
   align-items: center;
+  height: 100%;
   flex-direction: column;
-  padding: 0 1.5rem;
 }
 .login__logo {
   display: flex;
@@ -1092,7 +1103,6 @@ table {
   padding: 2.25em 0 0 2.25em;
   border-radius: 0.972em;
   overflow: hidden;
-  box-shadow: 0 0.45em 1.805em rgba(0, 0, 0, 0.08);
 }
 .login__input {
   font-size: 1em;
@@ -1122,7 +1132,6 @@ table {
   color: #CF2136;
   text-decoration: none;
   margin-bottom: 2.7em;
-  margin-right: 1.2em;
 }
 .login__forget-pass:hover, .login__forget-pass:focus {
   text-decoration: underline;
@@ -1134,6 +1143,35 @@ table {
   font-weight: 300;
   align-self: flex-end;
   text-transform: none;
+}
+.login__footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: auto;
+  width: 100%;
+}
+.login__text {
+  width: 70%;
+  text-align: center;
+  padding-left: 30%;
+}
+.login__links {
+  display: flex;
+  width: 30%;
+}
+.login__links a {
+  text-decoration: none;
+  line-height: 0.7;
+  margin-left: 1rem;
+}
+.login__links a svg {
+  width: auto;
+  height: 100%;
+  max-height: 2.7rem;
+}
+.login__links a svg:hover, .login__links a svg:focus {
+  fill: #626262;
 }
 
 .stickers {
