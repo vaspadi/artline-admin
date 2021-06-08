@@ -948,6 +948,7 @@ table {
   background-color: #FFFFFF;
   padding: 2.5rem 3.5rem;
   border-radius: 0.972em;
+  box-shadow: 0 0.375em 1.504em rgba(0, 0, 0, 0.08);
 }
 .small-section__header {
   display: flex;
@@ -968,10 +969,14 @@ table {
   align-items: flex-start;
 }
 .small-section__img {
-  width: 45%;
+  flex-shrink: 2;
+  flex-basis: 45%;
+}
+.small-section__img img {
+  width: 100%;
 }
 .small-section__table {
-  width: 100%;
+  flex-basis: 55%;
   margin-left: 2.5rem;
 }
 .small-section__download-info {
