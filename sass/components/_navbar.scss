@@ -1,4 +1,7 @@
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -7,12 +10,14 @@
   font-size: 1.7rem;
   background-color: $component-bg;
   padding: 1.038em 0 1.577em;
+  box-shadow: 0 0.375em 1.504em rgba(0, 0, 0, 0.08);
+  z-index: 10;
 
-  &_fixed {
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
+  // &_fixed {
+  //   position: fixed;
+  //   top: 0;
+  //   left: 0;
+  // }
 
   &__logo {
     margin-left: 2.231em;

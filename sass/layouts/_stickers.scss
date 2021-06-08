@@ -1,6 +1,6 @@
 .stickers {
   display: flex;
-  height: 100vh;
+  // height: 100vh;
   background-color: $page-bg;
 
   &__thead {
@@ -35,22 +35,22 @@
   }
   
   &__table-wrapper {
-    max-height: 20em;
+    // max-height: 20em;
     font-size: 1.7rem;
-    overflow-y: auto;
+    // overflow-y: auto;
     
-    &::-webkit-scrollbar {
-      width: 0.294em;
-      background-color: transparent; 
-    }
-    &::-webkit-scrollbar-track {
-      margin-bottom: 1.176em;
-    }
+    // &::-webkit-scrollbar {
+    //   width: 0.294em;
+    //   background-color: transparent; 
+    // }
+    // &::-webkit-scrollbar-track {
+    //   margin-bottom: 1.176em;
+    // }
     
-    &::-webkit-scrollbar-thumb {
-      background-color: $active;
-      border-radius: 0.588em;
-    }
+    // &::-webkit-scrollbar-thumb {
+    //   background-color: $active;
+    //   border-radius: 0.588em;
+    // }
   }
 
   &__table {

@@ -1,12 +1,6 @@
 .analitics {
+  display: flex;
   background-color: $page-bg;
-  padding-top: 12rem;
-  margin-left: 25.8rem;
-
-  &__wrapper {
-    padding-bottom: 5rem;
-    padding-top: 0;
-  }
 
   &__logo {
     position: fixed;

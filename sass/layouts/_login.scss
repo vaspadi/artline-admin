@@ -39,10 +39,12 @@
     padding: 2.25em 0 0 2.25em;
     border-radius: 0.972em;
     overflow: hidden;
+    box-shadow: 0 0.45em 1.805em rgba(0, 0, 0, 0.08);
   }
 
   &__input {
     font-size: 1em;
+    line-height: 1em;
     background-color: $page-bg;
     padding: 0.556em;
     border-radius: 3em 0 0 3em;
@@ -56,7 +58,7 @@
     }
 
     &:nth-child(2) {
-      margin-bottom: 0.2em;
+      margin-bottom: 0.5em;
     }
   }
 
@@ -65,7 +67,7 @@
     font-size: 0.75em;
     color: $active;
     text-decoration: none;
-    margin-bottom: 3em;
+    margin-bottom: 2.7em;
     margin-right: 1.2em;
     
     &:hover,
