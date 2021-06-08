@@ -1,10 +1,9 @@
 .settings {
   display: flex;
-  // font-size: 1.7rem;
   background-color: $page-bg;
 
   &__section {
-    padding: 5rem 0;
+    padding: 5rem 0 3rem;
   }
 
   &__title {
@@ -29,6 +28,8 @@
   }
 
   &__submit {
+    display: inline-flex;
+    align-items: center;
     font-size: 1.7rem;
   }
 }

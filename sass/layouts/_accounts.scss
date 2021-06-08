@@ -2,6 +2,10 @@
   display: flex;
   background-color: $page-bg;
 
+  &__section {
+    padding-bottom: 6rem;
+  }
+
   &__table {
     margin-top: 4.5rem;
   }

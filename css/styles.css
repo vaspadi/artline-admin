@@ -426,7 +426,7 @@ table {
   flex-direction: column;
   width: 100%;
   max-width: 50em;
-  min-height: 21.5em;
+  min-height: 10em;
   max-height: none;
   font-size: 2.4rem;
   background-color: #FFFFFF;
@@ -1281,6 +1281,9 @@ table {
   display: flex;
   background-color: #F9F9F9;
 }
+.accounts__section {
+  padding-bottom: 6rem;
+}
 .accounts__table {
   margin-top: 4.5rem;
 }
@@ -1330,7 +1333,7 @@ table {
   background-color: #F9F9F9;
 }
 .settings__section {
-  padding: 5rem 0;
+  padding: 5rem 0 3rem;
 }
 .settings__title {
   background-color: #F9F9F9;
@@ -1356,5 +1359,7 @@ table {
   text-transform: none;
 }
 .settings__submit {
+  display: inline-flex;
+  align-items: center;
   font-size: 1.7rem;
 }/*# sourceMappingURL=styles.css.map */
