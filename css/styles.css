@@ -72,6 +72,17 @@ table {
   margin-bottom: 0;
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 15;
+}
+
 .input {
   font-size: inherit;
   background-color: #EDEDED;
@@ -283,6 +294,28 @@ table {
   width: 1.8em;
 }
 
+.burger {
+  position: fixed;
+  top: 3.5rem;
+  left: 3.5rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  background-color: #CF2136;
+  border: none;
+  border-radius: 50%;
+  z-index: 10;
+  cursor: pointer;
+}
+.burger:hover, .burger:focus {
+  background-color: #a31a2b;
+}
+.burger img {
+  width: 50%;
+}
+
 .search {
   position: relative;
   font-size: 2.4rem;
@@ -389,7 +422,12 @@ table {
   background-color: #FFFFFF;
   padding: 1.038em 0 1.577em;
   box-shadow: 0 0.375em 1.504em rgba(0, 0, 0, 0.08);
-  z-index: 10;
+  z-index: 20;
+}
+@media screen and (max-width: 1200px) {
+  .navbar {
+    display: none;
+  }
 }
 .navbar__logo {
   margin-left: 2.231em;
@@ -459,9 +497,13 @@ table {
   align-items: center;
   width: 100%;
   min-height: 100vh;
-  padding-top: 12rem;
-  padding-bottom: 2em;
+  padding: 12rem 1.5rem 2em;
   margin-left: 25.8rem;
+}
+@media screen and (max-width: 1200px) {
+  .section-wrapper {
+    margin-left: 0;
+  }
 }
 .section-logo {
   position: fixed;
@@ -477,6 +519,12 @@ table {
   padding-right: 25.8rem;
   margin: 0;
   z-index: 5;
+}
+@media screen and (max-width: 1200px) {
+  .section-logo {
+    left: 0;
+    padding-right: 0;
+  }
 }
 .section-logo img {
   width: 18.4rem;
@@ -906,7 +954,8 @@ table {
 .analitics-thead td:nth-child(3) {
   display: flex;
   align-items: center;
-  width: 63rem;
+  width: 100%;
+  max-width: 63rem;
 }
 .analitics-thead td:nth-child(3) span {
   font-size: 1.1em;

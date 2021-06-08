@@ -1,0 +1,24 @@
+.burger {
+  position: fixed;
+  top: 3.5rem;
+  left: 3.5rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  background-color: $active;
+  border: none;
+  border-radius: 50%;
+  z-index: 10;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: darken($active, 10%);
+  }
+
+  img {
+    width: 50%;
+  }
+}

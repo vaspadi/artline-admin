@@ -11,14 +11,12 @@
   background-color: $component-bg;
   padding: 1.038em 0 1.577em;
   box-shadow: 0 0.375em 1.504em rgba(0, 0, 0, 0.08);
-  z-index: 10;
-
-  // &_fixed {
-  //   position: fixed;
-  //   top: 0;
-  //   left: 0;
-  // }
-
+  z-index: 20;
+  
+  @media screen and (max-width: 1200px) {
+    display: none;    
+  }
+  
   &__logo {
     margin-left: 2.231em;
     margin-bottom: 0.5em;

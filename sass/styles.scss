@@ -5,6 +5,7 @@
 
 // abstract
 @import 'abstract/scroll';
+@import 'abstract/overlay';
 
 // components
 @import 'components/input';
@@ -13,6 +14,7 @@
 @import 'components/simple-button';
 @import 'components/toggle';
 @import 'components/add-button';
+@import 'components/burger';
 @import 'components/search';
 @import 'components/radio';
 @import 'components/download-info';

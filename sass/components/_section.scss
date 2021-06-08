@@ -21,9 +21,12 @@
     align-items: center;
     width: 100%;
     min-height: 100vh;
-    padding-top: 12rem;
-    padding-bottom: 2em;
+    padding: 12rem 1.5rem 2em;
     margin-left: 25.8rem;
+
+    @media screen and (max-width: 1200px) {
+      margin-left: 0;
+    }
   }
 
   &-logo {
@@ -40,6 +43,11 @@
     padding-right: 25.8rem;
     margin: 0;
     z-index: 5;
+
+    @media screen and (max-width: 1200px) {
+      left: 0;
+      padding-right: 0;
+    }
 
     img {
       width: 18.4rem;
