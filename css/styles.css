@@ -790,7 +790,7 @@ table {
   width: 100%;
 }
 .finance-table__table tr {
-  border-bottom: 0.1rem solid #000;
+  border-bottom: 0.1rem solid #7B7B7B;
 }
 .finance-table__table td {
   padding: 2rem 0;
