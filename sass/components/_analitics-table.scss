@@ -1,27 +1,8 @@
 .analitics-table {
-  &__thead {
-    background-color: $page-bg;
+  width: 100%;
 
-    td {
-      padding: 1.5rem 0 1rem;
-
-      &:nth-child(3) {
-        display: flex;
-        align-items: center;
-        font-size: 1.1em;
-      }
-    }
-
-  }
-
-  &__search {
-    font-size: 0.9em;
-  }
-
-  &__tbody {
-    td {
-      padding: 1.5rem 0;
-    }
+  &-wrapper {
+    max-height: 40rem;
   }
 
   td {
@@ -32,11 +13,8 @@
       padding-left: 4rem;
     }
 
-    &:last-child {
-      padding-right: 4rem;
-    }
-
     &:nth-child(2) {
+      width: 10rem;
       text-align: center;
     }
 
@@ -55,6 +33,11 @@
       width: 20rem;
       text-align: center;
     }
+    
+    &:last-child {
+      padding-right: 4rem;
+    }
+
   }
 
   &__img {
