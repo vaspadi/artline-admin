@@ -1,77 +1,54 @@
 .finance-table {
   display: flex;
   flex-direction: column;
-  padding: 4rem 5rem 0;
-  
-  &__thead {
-    display: flex;
-    font-weight: 500;
-    padding-bottom: 1rem;
-    border-bottom: 0.1rem solid #000;
+  // overflow-x: auto;
+
+  tr {
+    border-bottom: 0.1rem solid #7B7B7B;
   }
 
-  &__thead-item {
+  td {
     font-weight: 500;
+    padding-bottom: 1rem;
 
     &:nth-child(1) {
-      width: 15.5rem;
+      width: 11rem;
     }
 
     &:nth-child(2) {
       width: 21.5rem;
+      text-align: center;
     }
 
     &:nth-child(3) {
-      width: 38.5rem;
+      width: 26rem;
+      text-align: center;
     }
+
+    &:nth-child(4) {
+      width: 17rem;
+    }
+
+    &:nth-child(5) {
+      width: 34rem;
+    }
+  }
+
+  &__thead {
+    min-width: 68rem;
   }
 
   &__wrapper {
     min-height: 10rem;
     max-height: 25rem;
+    min-width: 68rem;
   }
   
   &__table {
     width: 100%;
     
-    tr {
-      border-bottom: 0.1rem solid #7B7B7B;
-    }
-    
     td {
       padding: 2rem 0;
-
-      span {
-        font-weight: 500;
-      }
-    }
-
-    td:nth-child(1) {
-      width: 15.5rem;
-    }
-
-    td:nth-child(2) {
-      width: 21.5rem;
-      
-      span {
-        display: inline-block;
-        min-width: 55%;
-        // width: 100%;
-        text-align: center;
-        // padding-right: 45%;
-      }
-    }
-
-    td:nth-child(3) {
-      width: 38.5rem;
-      
-      span {
-        display: inline-block;
-        min-width: 40%;
-        // width: 100%;
-        text-align: center;
-        // padding-right: 60%;
-      }
     }
   }
 }

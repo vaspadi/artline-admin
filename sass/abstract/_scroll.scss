@@ -1,6 +1,6 @@
 .scroll {
   overflow-y: auto;
-
+  overflow-x: clip;
 
   &::-webkit-scrollbar {
     width: 0.294em;
@@ -17,15 +17,18 @@
     border-radius: 0.588em;
   }
 
-  &_margin-none {
-    &::-webkit-scrollbar-track {
-      margin-bottom: 0;
-    }
-  }
-  
   &_x {
+    overflow-y: clip;
+    overflow-x: auto;
+    
     &::-webkit-scrollbar-track {
       margin: 0 1.176em;
+    }
+  }
+
+  &_margin-none {
+    &::-webkit-scrollbar-track {
+      margin: 0;
     }
   }
 }
