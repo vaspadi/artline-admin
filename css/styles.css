@@ -339,6 +339,7 @@ table {
 
 .search {
   position: relative;
+  display: inline-block;
   font-size: 2.4rem;
 }
 .search::before {
@@ -941,55 +942,65 @@ table {
   padding: 2rem 0;
 }
 
+.stickers-table td {
+  padding: 1.5rem 0;
+}
+.stickers-table td:first-child {
+  padding-left: 4rem;
+}
+.stickers-table td:nth-child(1) {
+  width: 2.5rem;
+}
+.stickers-table td:nth-child(2) {
+  min-width: 10rem;
+}
+.stickers-table td:nth-child(3) {
+  width: 55rem;
+}
+.stickers-table td:nth-child(4), .stickers-table td:nth-child(5), .stickers-table td:nth-child(6) {
+  width: 14rem;
+  text-align: center;
+}
+.stickers-table td:nth-child(7) {
+  width: 3rem;
+}
+.stickers-table td:last-child {
+  padding-right: 4rem;
+}
 .stickers-table__thead {
-  display: flex;
-  align-items: center;
+  min-width: 70rem;
+  width: 100%;
   background-color: #F9F9F9;
   padding: 1.5rem 4rem 1rem;
 }
-.stickers-table__thead-item {
-  font-weight: 500;
+.stickers-table__thead td:nth-child(3) {
+  white-space: nowrap;
 }
-.stickers-table__thead-item:nth-child(2) {
-  flex-shrink: 0.7;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  max-width: 52rem;
-  margin-left: 10rem;
-}
-.stickers-table__thead-item:nth-child(2) span {
+.stickers-table__thead td:nth-child(3) span {
   font-weight: 500;
   margin-right: 1.7rem;
 }
-.stickers-table__thead-item:nth-child(3), .stickers-table__thead-item:nth-child(4), .stickers-table__thead-item:nth-child(5) {
+.stickers-table__thead td:nth-child(7) {
+  width: 7rem;
+}
+.stickers-table__tbody {
+  min-width: 70rem;
   width: 100%;
-  max-width: 15rem;
-  text-align: center;
 }
-.stickers-table__search {
-  font-size: 1em;
-}
-.stickers-table__content {
-  padding: 0 4rem;
-}
-.stickers-table__table td {
-  padding: 1.5rem 0;
-}
-.stickers-table__table td:nth-child(2) {
-  width: 10rem;
+.stickers-table__tbody td:nth-child(2) {
   display: flex;
   justify-content: center;
 }
-.stickers-table__table td:nth-child(2) img {
+.stickers-table__tbody td:nth-child(2) img {
   max-width: 5rem;
 }
-.stickers-table__table td:nth-child(3) {
-  width: 53rem;
+.stickers-table__search {
+  width: 55%;
+  max-width: 20rem;
+  font-size: 1em;
 }
-.stickers-table__table td:nth-child(4), .stickers-table__table td:nth-child(5), .stickers-table__table td:nth-child(6) {
-  width: 15rem;
-  text-align: center;
+.stickers-table__wrapper {
+  padding: 0 4rem;
 }
 
 .analitics-thead {
@@ -1437,7 +1448,7 @@ table {
 }
 .finance__finance-table {
   font-size: 1.7rem;
-  margin: 4rem 5rem 2rem;
+  margin: 4rem 5rem 4rem;
 }
 .finance__stickers-table {
   font-size: 1.7rem;
