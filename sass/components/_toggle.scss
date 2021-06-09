@@ -1,7 +1,10 @@
 .toggle {
   display: inline-flex;
+  min-width: 20rem;
+  
   &__button {
-    font-size: 1.7rem;
+    flex-basis: 50%;
+    font-size: 1em;
     font-weight: 300;
     text-transform: lowercase;
     background-color: $page-bg;

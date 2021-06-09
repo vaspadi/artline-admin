@@ -1,8 +1,10 @@
 .scroll {
   overflow-y: auto;
 
+
   &::-webkit-scrollbar {
     width: 0.294em;
+    height: 0.294em;
     background-color: transparent; 
   }
 
@@ -18,6 +20,12 @@
   &_margin-none {
     &::-webkit-scrollbar-track {
       margin-bottom: 0;
+    }
+  }
+  
+  &_x {
+    &::-webkit-scrollbar-track {
+      margin: 0 1.176em;
     }
   }
 }

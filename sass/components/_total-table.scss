@@ -3,22 +3,33 @@
   flex-direction: column;
   font-weight: 700;
 
+  @media screen and (max-width: 600px) {
+    font-size: 0.8em;
+  }
+
   &__row {
     display: flex;
     width: 100%;
-    padding: 1.5rem 3rem;
+    padding: 0.625em 1.25em;
+  }
+
+  
+  &__item {
+    min-width: 18%;
+    padding-right: 1.667em;
   }
 
   &__row_first {
-    padding-top: 1rem;
+    padding-top: 0.417em;
   }
 
   &__row_second {
     font-size: 1.35em;
     background-color: $page-bg;
-  }
+    padding: 0.463em 0.926em;
 
-  &__item {
-    width: 18%;
+    .total-table__item {
+      padding-right: 1.235em;
+    }
   }
 }

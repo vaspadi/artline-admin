@@ -19,6 +19,8 @@
 
   &__input {
     height: 1.958em;
+    width: 100%;
+    min-width: 8em;
     font-size: inherit;
     color: $text-color;
     background-color: $component-bg;

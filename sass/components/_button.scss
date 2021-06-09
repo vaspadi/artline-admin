@@ -5,7 +5,7 @@
   width: 100%;
   max-width: 13.8em;
   height: 3.6em;
-  font-size: 1.7rem;
+  font-size: 0.708em;
   font-weight: 500;
   color: #fff;
   text-decoration: none;
@@ -14,6 +14,10 @@
   border: none;
   border-radius: 0 0.972em 0 0.5em;
   cursor: pointer;
+
+  @media screen and (max-width: 600px) {
+    font-size: 0.55em;
+  }
   
   &:hover,
   &:focus {
@@ -31,10 +35,10 @@
       content: '';
       position: absolute;
       top: 50%;
-      left: 1rem;
+      left: 0.588em;
       display: inline-block;
-      width: 2.7rem;
-      height: 2.7rem;
+      width: 1.588em;
+      height: 1.588em;
       background-image: url('../img/calendar.svg');
       background-position: center;
       background-size: contain;

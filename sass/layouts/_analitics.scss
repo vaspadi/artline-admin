@@ -33,6 +33,11 @@
     min-height: 20rem;
   }
 
+  &__thead-table {
+    width: 100%;
+    min-width: 65rem;
+  }
+
   &__analitics-thead {
     font-size: 1.7rem;
   }
@@ -47,17 +52,31 @@
     width: 100%;
     max-width: 50em;
     font-size: 2.4rem;
+
+    @media screen and (max-width: 1000px) {
+      flex-direction: column;
+    }
   }
 
   &__small-section {
     font-size: 0.9em;
 
+    @media screen and (max-width: 600px) {
+      font-size: 0.8em;
+    }
+
     &:nth-child(1) {
       margin-right: 4rem;
+
+      @media screen and (max-width: 1000px) {
+        margin-right: 0;
+        margin-bottom: 4rem;
+      }
     }
 
     &:nth-child(2) {
       width: 100%;
+
     }
   }
 }
