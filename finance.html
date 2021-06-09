@@ -97,18 +97,22 @@
           <a class="button section__button button_calendar">2021</a>
         </header>
 
-        <div class="total-table finance__total-table">
-          <div class="total-table__row total-table__row_first">
-            <div class="total-table__item">Весь доход</div>
-            <div class="total-table__item">Выплачено</div>
-            <div class="total-table__item">К выплате</div>
-          </div>
-          <div class="total-table__row total-table__row_second">
-            <div class="total-table__item">&#36;13.2 К</div>
-            <div class="total-table__item">&#36;12.2 К</div>
-            <div class="total-table__item">&#36;1 К</div>
-          </div>
-        </div>
+        <table class="total-table finance__total-table">
+          <thead class="total-table__thead">
+            <tr>
+              <td>Весь доход</td>
+              <td>Выплачено</td>
+              <td>К выплате</td>
+            </tr>
+          </thead>
+          <tbody class="total-table__tbody">
+            <tr>
+              <td>&#36;13.2 К</td>
+              <td>&#36;12.2 К</td>
+              <td>&#36;1 К</td>
+            </tr>
+          </tbody>
+        </table>
 
         <div class="finance__content scroll">
           <div class="finance-table finance__finance-table">

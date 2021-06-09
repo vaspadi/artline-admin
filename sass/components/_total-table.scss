@@ -1,35 +1,57 @@
 .total-table {
-  display: flex;
-  flex-direction: column;
-  font-weight: 700;
-
   @media screen and (max-width: 600px) {
     font-size: 0.8em;
   }
 
-  &__row {
-    display: flex;
-    width: 100%;
-    padding: 0.625em 1.25em;
+  tr {
+    font-size: inherit;
   }
 
-  
-  &__item {
-    min-width: 18%;
-    padding-right: 1.667em;
+  td {
+    font-size: inherit;
+    text-align: left;
+    width: 7em;
+    padding: 0.625em 0;
+
+
+    &:last-child {
+      width: auto;
+      min-width: 5em;
+    }
   }
 
-  &__row_first {
-    padding-top: 0.417em;
+  &__thead {
+    font-size: inherit;
+
+    td {
+      padding-top: 0.417em;
+
+      &:first-child {
+        padding-left: 1.25em;
+      }
+      
+      &:last-child {
+        padding-right: 1.25em;
+      }
+    }
   }
 
-  &__row_second {
-    font-size: 1.35em;
+  &__tbody {
+    font-size: inherit;
     background-color: $page-bg;
-    padding: 0.463em 0.926em;
+    font-size: 1.35em;
 
-    .total-table__item {
-      padding-right: 1.235em;
+    td {
+      padding: 0.463em 0;
+
+
+      &:first-child {
+        padding-left: 0.926em;
+      }
+      
+      &:last-child {
+        padding-right: 0.926em;
+      }
     }
   }
 }
