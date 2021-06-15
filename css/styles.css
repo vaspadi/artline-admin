@@ -1625,7 +1625,7 @@ table {
   left: -17%;
 }
 .accounts__select-wrapper::after {
-  right: 1.1em;
+  right: 1.5em;
 }
 .accounts__select {
   padding-top: 0.8em;
