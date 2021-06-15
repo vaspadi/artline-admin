@@ -159,6 +159,7 @@ table {
 }
 .select-wrapper {
   position: relative;
+  display: inline-block;
 }
 .select-wrapper::after {
   content: "";
@@ -1623,9 +1624,6 @@ table {
 .accounts__img:nth-child(2) {
   position: relative;
   left: -17%;
-}
-.accounts__select-wrapper::after {
-  right: 1.5em;
 }
 .accounts__select {
   padding-top: 0.8em;
