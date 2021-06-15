@@ -1,5 +1,6 @@
 .login {
-  height: 100vh;
+  display: flex;
+  min-height: 100vh;
   background-color: $page-bg;
   padding-top: 5rem;
   
@@ -7,7 +8,8 @@
   &__content {
     display: flex;
     align-items: center;
-    height: 100%;
+    width: 100%;
+    height: inherit;
     flex-direction: column;
     padding: 0 1.5rem;
   }
@@ -97,6 +99,8 @@
     align-items: flex-end;
     margin-top: auto;
     width: 100%;
+    max-width: 136rem;
+    padding: 1.5rem 2rem;
 
     @media screen and (max-width: 1000px) {
       flex-direction: column-reverse;
@@ -117,6 +121,7 @@
 
   &__links {
     display: flex;
+    justify-content: flex-end;
     width: 30%;
 
     @media screen and (max-width: 1000px) {
@@ -128,7 +133,7 @@
     a {
       text-decoration: none;
       line-height: 0.7;
-      margin-left: 1rem;
+      margin-left: 1.425em;
 
       svg {
         width: auto;

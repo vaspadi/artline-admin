@@ -30,5 +30,6 @@
   &::placeholder {
     color: $text-color;
     text-transform: uppercase;
+    min-height: 100%;
   }
 }
