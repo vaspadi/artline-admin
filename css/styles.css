@@ -1154,7 +1154,7 @@ table {
 .small-section__img img {
   width: 100%;
 }
-.small-section__table {
+.small-section__table-wrapper {
   flex-basis: 55%;
   margin-left: 1em;
 }
