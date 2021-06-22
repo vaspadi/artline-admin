@@ -1,0 +1,30 @@
+.multiselect {
+  position: relative;
+  width: max-content;
+
+  &__search {
+    width: inherit;
+    background-color: $item-bg;
+  }
+
+  &__list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    background-color: $item-bg;
+  }
+
+  &__item-content {
+    display: flex;
+
+  }
+
+  &__img {
+    img {
+      border-radius: 50%;
+    }
+  }
+}
