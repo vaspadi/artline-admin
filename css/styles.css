@@ -586,6 +586,7 @@ table {
   width: 100%;
   font-size: 2.4rem;
   background-color: #fff;
+  padding-bottom: 6rem;
   border-radius: 0.972em 0.972em 0 0;
   margin: 0 1.5rem;
   -webkit-animation: pull 0.4s ease-out;
@@ -658,6 +659,12 @@ table {
 }
 .modal__img:first-child {
   position: static;
+}
+.modal__payment {
+  display: flex;
+}
+.modal__payment input {
+  margin-right: 2rem;
 }
 .modal td {
   font-size: 1.7rem;

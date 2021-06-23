@@ -95,7 +95,7 @@
       <div class="section accounts__section">
         <header class="section__header">
           <div class="search section__search"><input class="search__input" type="search"></div>
-          <a class="button section__button" id="show-modal">Добавить</a>
+          <a class="button section__button show-modal">Добавить</a>
         </header>
 
         <table class="accounts__table">
@@ -140,66 +140,67 @@
     </div>
 
   </div>
-<div class="modal-overlay">
-  <div class="modal">
-    <div class="modal__content">
-      <table class="modal__table ">
-        <thead class="modal__thead">
-          <tr>
-            <td>Название</td>
-            <td>Email</td>
-            <td>Пароль</td>
-            <td></td>
-            <td>Паки</td>
-            <td></td>
-            <td>%</td>
-          </tr>
-        </thead>
 
-        <tbody class="modal__tbody">
-          <tr>
-            <td><input type="text" class="input modal__input" placeholder="Lord Co"></td>
-            <td><input type="text" class="input modal__input" placeholder="lord13@gmail.com"></td>
-            <td><input type="text" class="input modal__input" placeholder="S13_32cf"></td>
-            <td><button class="modal__refresh"></button></td>
-            <td>
-              <div class="multiselect-wrapper">
-                <div class="multiselect multiselect_no-active modal__multiselect">
-                  <div class="multiselect__search-wrapper">
-                    <input type="search" class="multiselect__search">
+  <div class="modal-overlay">
+    <div class="modal">
+      <div class="modal__content">
+        <table class="modal__table ">
+          <thead class="modal__thead">
+            <tr>
+              <td>Название</td>
+              <td>Email</td>
+              <td>Пароль</td>
+              <td></td>
+              <td>Паки</td>
+              <td></td>
+              <td>%</td>
+            </tr>
+          </thead>
+
+          <tbody class="modal__tbody">
+            <tr>
+              <td><input type="text" class="input modal__input" placeholder="Lord Co"></td>
+              <td><input type="text" class="input modal__input" placeholder="lord13@gmail.com"></td>
+              <td><input type="text" class="input modal__input" placeholder="S13_32cf"></td>
+              <td><button class="modal__refresh"></button></td>
+              <td>
+                <div class="multiselect-wrapper">
+                  <div class="multiselect multiselect_no-active modal__multiselect">
+                    <div class="multiselect__search-wrapper">
+                      <input type="search" class="multiselect__search">
+                    </div>
+                    <ul class="multiselect__list"></ul>
                   </div>
-                  <ul class="multiselect__list"></ul>
                 </div>
-              </div>
-            </td>
-            <td>
-              <div class="modal__images">
-                <img src="img/stickers/img.jpg" alt="" class="accounts__img">
-                <img src="img/stickers/img.jpg" alt="" class="accounts__img">
-              </div>
-            </td>
-            <td>
-              <div class="select-wrapper accounts__select-wrapper">
-                <select class="select accounts__select" name="lang">
-                  <option class="select__option" value="ru">100</option>
-                  <option class="select__option" value="ru">70</option>
-                  <option class="select__option" value="ru">50</option>
-                  <option class="select__option" value="en">30</option>
-                  <option class="select__option" value="en">10</option>
-                  <select>
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+              </td>
+              <td>
+                <div class="modal__images">
+                  <img src="img/stickers/img.jpg" alt="" class="accounts__img">
+                  <img src="img/stickers/img.jpg" alt="" class="accounts__img">
+                </div>
+              </td>
+              <td>
+                <div class="select-wrapper accounts__select-wrapper">
+                  <select class="select accounts__select" name="lang">
+                    <option class="select__option" value="ru">100</option>
+                    <option class="select__option" value="ru">70</option>
+                    <option class="select__option" value="ru">50</option>
+                    <option class="select__option" value="en">30</option>
+                    <option class="select__option" value="en">10</option>
+                    <select>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
 
-      <div class="modal__buttons">
-        <button class="simple-button simple-button_light" id="close-modal">Отменить</button>
-        <button class="simple-button">Принять</button>
+        <div class="modal__buttons">
+          <button class="simple-button simple-button_light" id="close-modal">Отменить</button>
+          <button class="simple-button">Принять</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
   <script src="js/menu.js"></script>
   <script src="js/modal.js"></script>
