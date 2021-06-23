@@ -13,4 +13,14 @@
   &:focus {
     background-color: darken($active, 10%);
   }
+
+  &_light {
+    background-color: transparent;
+    color: $active;
+
+    &:hover,
+    &:focus {
+      background-color: $item-bg;
+    }
+  }
 }

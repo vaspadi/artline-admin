@@ -1,0 +1,113 @@
+.modal {
+  max-width: 50em;
+  min-height: 15em;
+  width: 100%;
+  font-size: 2.4rem;
+  background-color: #fff;
+  border-radius: 0.972em 0.972em 0 0;
+  margin: 0 1.5rem;
+  animation: pull 0.4s ease-out;
+
+  &-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    font-size: 1.7rem;
+    background-color: rgba(0, 0, 0, 0.43);
+    cursor: pointer;
+    z-index: 15;
+    animation: show 0.4s ease-out;
+    
+    @media screen and (min-width: 1200px) {
+      padding-left: 15.154em;
+    }
+  }
+
+  &__content {
+    font-size: 1.7rem;
+  }
+
+  &__table {
+    width: 100%;
+    margin-top: 4.5rem;
+  }
+
+  &__thead {
+    padding: 0 1.5rem;
+
+    td {
+      font-weight: 500;
+      // padding: 2.3rem 0;
+    }
+  }
+
+  &__tbody {
+    td {
+      padding-top: 2rem;
+    }
+  }
+
+  &__input {
+    width: 100%;
+  }
+
+  &__refresh {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+    background-image: url('../img/refresh.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+  }
+
+  &__multiselect {
+    width: 100%;
+  }
+
+  &__images {
+    display: flex;
+  }
+
+  &__img {
+    position: relative;
+    left: -17%;
+    width: 5rem;
+    border-radius: 50%;
+
+    &:first-child {
+      position: static;
+    }
+  }
+
+  td {
+    font-size: 1.7rem;
+    padding-right: 2rem;
+
+    &:first-child {
+      padding-left: 5rem;
+    }
+
+    &:last-child {
+      padding-right: 5rem;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 5rem;
+    margin-top: 10rem;
+
+    button:first-child {
+      margin-right: 2rem;
+    }
+  }
+}

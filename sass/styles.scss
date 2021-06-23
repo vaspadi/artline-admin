@@ -6,6 +6,7 @@
 // abstract
 @import 'abstract/scroll';
 @import 'abstract/overlay';
+@import 'abstract/animations';
 
 // components
 @import 'components/input';
@@ -20,6 +21,7 @@
 @import 'components/multiselect';
 @import 'components/download-info';
 
+@import 'components/modal';
 @import 'components/navbar';
 @import 'components/section';
 @import 'components/footer';
