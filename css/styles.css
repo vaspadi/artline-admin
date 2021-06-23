@@ -590,6 +590,7 @@ table {
   margin: 0 1.5rem;
   -webkit-animation: pull 0.4s ease-out;
           animation: pull 0.4s ease-out;
+  cursor: default;
 }
 .modal-overlay {
   position: fixed;
@@ -641,6 +642,7 @@ table {
   background-repeat: no-repeat;
   background-size: contain;
   border: none;
+  cursor: pointer;
 }
 .modal__multiselect {
   width: 100%;
