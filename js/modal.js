@@ -6,8 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
   button.addEventListener('click', function(e) {
     e.stopPropagation()
     modalOverlay.style.display = 'flex'
-    // modal.classList.add('modal_active')
-    // modal.classList.remove('modal_no-active')
   }) 
 
   window.addEventListener('click', function (e) {
@@ -15,9 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (!contain) {
       modalOverlay.style.display = 'none'
-      // modal.classList.remove('modal_no-active')
-      // modal.classList.add('modal_no-active')
-
     }
   })
 })

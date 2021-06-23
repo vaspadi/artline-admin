@@ -468,6 +468,9 @@ table {
 .multiselect_no-active .multiselect__search {
   border-radius: 1.5rem;
 }
+.multiselect_no-active .multiselect__search:hover, .multiselect_no-active .multiselect__search:focus {
+  box-shadow: 0 0 0 0.15em #CF2136;
+}
 .multiselect__search-wrapper {
   position: relative;
 }
@@ -495,6 +498,10 @@ table {
   padding: 1.5rem 0 1.5rem 3.5rem;
   border: none;
   border-radius: 1.5rem 1.5rem 0 0;
+  box-shadow: 0 0 0 0.15em transparent;
+}
+.multiselect__search:hover, .multiselect__search:focus {
+  box-shadow: 0 0 0 0.15em transparent;
 }
 .multiselect__list {
   position: absolute;
@@ -506,6 +513,7 @@ table {
   background-color: #EDEDED;
   padding-bottom: 1rem;
   border-radius: 0 0 1.5rem 1.5rem;
+  box-shadow: 0 0 0 0.15em transparent;
 }
 .multiselect__label {
   display: flex;
