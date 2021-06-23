@@ -99,32 +99,6 @@ table {
   z-index: 15;
 }
 
-.multiselect {
-  position: relative;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-}
-.multiselect__search {
-  width: inherit;
-  background-color: #EDEDED;
-}
-.multiselect__list {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  display: none;
-  flex-direction: column;
-  min-width: 100%;
-  background-color: #EDEDED;
-}
-.multiselect__item-content {
-  display: flex;
-}
-.multiselect__img img {
-  border-radius: 50%;
-}
-
 .input {
   font-size: inherit;
   background-color: #EDEDED;
@@ -442,6 +416,86 @@ table {
   border: 0.2em solid #e0e0e0;
   border-radius: 50%;
   margin-right: 0.5em;
+}
+
+.multiselect {
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  width: 20rem;
+}
+.multiselect_no-active .multiselect__search {
+  border-radius: 1.5rem;
+}
+.multiselect__search-wrapper {
+  position: relative;
+}
+.multiselect__search-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 1.5rem;
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url("../img/search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transform: translateY(-50%);
+}
+.multiselect__search {
+  width: 100%;
+  height: 100%;
+  font-size: 1.7rem;
+  background-color: #EDEDED;
+  padding-left: 3rem;
+  padding-top: 1.5rem;
+  padding: 1.5rem 0 1.5rem 3.5rem;
+  border: none;
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+.multiselect__list {
+  position: absolute;
+  top: 90%;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  background-color: #EDEDED;
+  padding-bottom: 1rem;
+  border-radius: 0 0 1.5rem 1.5rem;
+}
+.multiselect__label {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  padding: 0.5rem 0 0.5rem 1.5rem;
+}
+.multiselect__label:hover, .multiselect__label:focus {
+  background-color: #d4d4d4;
+}
+.multiselect__pseudo-radio {
+  font-size: 1.3rem;
+  background-color: #fff;
+  border-color: #fff;
+}
+.multiselect__img {
+  max-height: 2.3rem;
+  margin-right: 0.5rem;
+}
+.multiselect__img img {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 2.3rem;
+  height: auto;
+}
+.multiselect__text {
+  font-size: 1.7rem;
 }
 
 .download-info td:nth-child(2) {
