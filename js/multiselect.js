@@ -65,6 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
   })
 
   // Создание селекта
+  const multiselectWrapper = document.querySelector('.multiselect-wrapper')
   const multiselectList = document.querySelector('.multiselect__list')
   const multiselectSearch = document.querySelector('.multiselect__search')
   let currentOptions = options
@@ -75,6 +76,18 @@ document.addEventListener('DOMContentLoaded', function() {
     multiselectList.append(option)
   })
 
+  window.addEventListener('click', function(e) {
+    if (e.target === multiselectWrapper || multiselectWrapper.contains(e.target)) {
+      multiselectList.style.display = 'flex'
+    } else {
+      multiselectList.style.display = 'none'
+      multiselectSearch.value = ''
+
+      options.forEach(option => {
+        option.style.display = 'block'
+      })
+    }
+  })
 
   // Поиск паков
   multiselectSearch.addEventListener('keyup', function() {
