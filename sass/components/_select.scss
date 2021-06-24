@@ -1,31 +1,38 @@
 .select {
-  font-size: inherit;
-  color: $active;
-  background-color: $item-bg;
-  border: none;
-  border-radius: 0.9em;
-  padding: 0.5em 1em;
-  padding-right: 1.7em;
-  appearance: none;
-  cursor: pointer;
+  position: relative;
+  width: 100%;
+  max-width: max-content;
+  text-transform: initial;
 
-  &:hover,
-  &:focus {
-    background-color: darken($item-bg, 10%);
+  &_active {
+    .select__button {
+      border-radius: 0.9em 0.9em 0 0;
+      box-shadow: 0 0.8em 0.8em 0 rgb(0 0 0 / 12%);
+      cursor: default;
+
+      &:hover,
+      &:focus {
+        background-color: $item-bg;
+      }
+    }
   }
 
-  &_big {
-    padding-right: 7.5em;
-  }
-
-  &-wrapper {
-    position: relative;
-    display: inline-block;
+  &__button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    line-height: 1;
+    background-color: $item-bg;
+    padding: 0.5em 1em;
+    padding-right: 2em;
+    border-radius: 0.9em;
+    cursor: pointer;
+    box-shadow: 0 0 0 0.15em transparent;
+    white-space: nowrap;
 
     &::after {
       content: '';
       position: absolute;
-      // top: 50%;
       bottom: 45%;
       right: 0.8em;
       width: 0.5em;
@@ -34,15 +41,43 @@
       border-bottom: 0.05em solid $active;
       transform: rotate(45deg);
     }
-  }
-
-  &__option {
-    background-color: #FFFFFF;
 
     &:hover,
     &:focus {
-      color: #FFFFFF;
-      background-color: $active;
+      background-color: darken($item-bg, 10%);
     }
+  }
+
+  &__list {
+    position: absolute;
+    top: 95%;
+    display: none;
+    flex-direction: column;
+    min-width: 100%;
+    background-color: $item-bg;
+    border-radius: 0 0 0.9em 0.9em;
+    padding-bottom: 0.5em;
+    overflow: hidden;
+    box-shadow: 0 0.8em 0.8em 0 rgb(0 0 0 / 12%);
+  }
+
+  &__label {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0.7rem 1em;
+    padding-right: 2em;
+    width: 100%;
+    white-space: nowrap;
+
+    &:hover,
+    &:focus {
+      background-color: darken($item-bg, 10%);
+    }
+  }
+
+  &__input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
   }
 }

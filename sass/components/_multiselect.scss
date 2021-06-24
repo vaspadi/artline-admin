@@ -6,6 +6,7 @@
   &_no-active {
     .multiselect__search {
       border-radius: 1.5rem;
+      box-shadow: 0 0 0 0.15em transparent;
 
       &:hover,
       &:focus {
@@ -43,11 +44,11 @@
     padding: 1.5rem 0 1.5rem 3.5rem;
     border: none;
     border-radius: 1.5rem 1.5rem 0 0;
-    box-shadow: 0 0 0 0.15em transparent;
+    box-shadow: 0 0.8em 0.8em 0 rgb(0 0 0 / 12%);
 
     &:hover,
     &:focus {
-      box-shadow: 0 0 0 0.15em transparent;
+      box-shadow: 0 0.8em 0.8em 0 rgb(0 0 0 / 12%);
     }
   }
 
@@ -61,7 +62,7 @@
     background-color: $item-bg;
     padding-bottom: 1rem;
     border-radius: 0 0 1.5rem 1.5rem;
-    box-shadow: 0 0 0 0.15em transparent;
+    box-shadow: 0 0.8em 0.8em 0 rgb(0 0 0 / 12%);
   }
 
   &__label {

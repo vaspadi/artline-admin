@@ -131,13 +131,10 @@
               <div class="information__info-block">
                 <div class="information__info-block-row">
                   <input type="text" class="input" placeholder="Название пака">
-                  <div class="select-wrapper">
-                    <select class="information__info-block-select select" name="lang">
-                      <option class="select__option" value="ru">Русский</option>
-                      <option class="select__option" value="ru">Русский</option>
-                      <option class="select__option" value="en">English</option>
-                      <option class="select__option" value="en">English</option>
-                    <select>
+
+                  <div class="select" id="lang-select">
+                    <p class="select__button"></p>
+                    <ul class="select__list"></ul>
                   </div>
                 </div>
                 <textarea class="input input_big" placeholder="Описание пака"></textarea>
@@ -184,25 +181,17 @@
             <div class="information__row information__row_margin">
               <label for="" class="information__select-label">
                 Категория:
-                <div class="select-wrapper">
-                  <select class="select select_big" name="category">
-                    <option class="select__option" value="">Инфлюенсеры</option>
-                    <option class="select__option" value="">Инфлюенсеры</option>
-                    <option class="select__option" value="">Тест</option>
-                    <option class="select__option" value="">Тест</option>
-                  </select>
+                <div class="select information__select" id="category-select">
+                  <p class="select__button"></p>
+                  <ul class="select__list"></ul>
                 </div>
               </label>
 
               <label for="" class="information__select-label">
                 Страна:
-                <div class="select-wrapper">
-                  <select class="select select_big" name="county">
-                    <option class="select__option" value="">Весь мир</option>
-                    <option class="select__option" value="">Весь мир</option>
-                    <option class="select__option" value="">Тест</option>
-                    <option class="select__option" value="">Тест</option>
-                  </select>
+                <div class="select information__select" id="country-select">
+                  <p class="select__button"></p>
+                  <ul class="select__list"></ul>
                 </div>
               </label>
             </div>
@@ -240,5 +229,30 @@
 
   <script src="js/information.js"></script>
   <script src="js/menu.js"></script>
+
+  <script src="js/select.js"></script>
+  <script>
+    const langSelectOptions = [
+      {name: 'Русский', value: 'one', default: true},
+      {name:'Русский', value: 'two'},
+      {name: 'Французский', value: "three"}
+    ]
+    
+    const categorySelectOptions = [
+      {name: 'Инфлюенсеры', value: 'one', default: true},
+      {name:'Инфлюенсеры', value: 'two'},
+      {name: 'Тест', value: "three"}
+    ]
+    
+    const countrySelectOptions = [
+      {name: 'Весь мир', value: 'one', default: true},
+      {name:'Латвия', value: 'two'},
+      {name: 'Украина', value: "three"}
+    ]
+
+    createSelect('lang-select', langSelectOptions)
+    createSelect('category-select', categorySelectOptions)
+    createSelect('country-select', countrySelectOptions)
+  </script>
 </body>
 </html>
