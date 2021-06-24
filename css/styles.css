@@ -1155,6 +1155,7 @@ table {
   text-align: left;
   width: 7em;
   padding: 0.625em 0;
+  white-space: nowrap;
 }
 .total-table td:last-child {
   width: auto;
@@ -1760,6 +1761,11 @@ table {
 @media screen and (max-width: 1000px) {
   .finance__total-table {
     font-size: 1.9rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .finance__total-table {
+    font-size: 1.5rem;
   }
 }
 .finance__content {
