@@ -313,14 +313,9 @@
               <td>
                 <div class="modal__payment">
                   <input type="text" class="input modal__input" placeholder="74000">
-                  <div class="select-wrapper accounts__select-wrapper">
-                    <select class="select accounts__select" name="lang">
-                      <option class="select__option" value="ru">100</option>
-                      <option class="select__option" value="ru">70</option>
-                      <option class="select__option" value="ru">50</option>
-                      <option class="select__option" value="en">30</option>
-                      <option class="select__option" value="en">10</option>
-                    <select>
+                  <div class="select" id="procent-select">
+                    <p class="select__button accounts__select"></p>
+                    <ul class="select__list"></ul>
                   </div>
                 </div>
               </td>
@@ -340,8 +335,19 @@
 
 
   <script src="js/modal.js"></script>
-  <!-- <script src="js/multiselect.js"></script> -->
   <script src="js/select-all.js"></script>
   <script src="js/menu.js"></script>
+
+  <script src="js/select.js"></script>
+  <script>
+    const procentSelectOptions = [
+      {name: '100', value: 'one', default: true},
+      {name:'70', value: 'two'},
+      {name: '10', value: "three"}
+    ]
+
+    createSelect('procent-select', procentSelectOptions)
+    createSelect('modal-select', procentSelectOptions)
+  </script>
 </body>
 </html>

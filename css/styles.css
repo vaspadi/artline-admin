@@ -191,6 +191,7 @@ table {
   display: flex;
   align-items: center;
   width: 100%;
+  height: 100%;
   line-height: 1;
   background-color: #EDEDED;
   padding: 0.5em 1em;
