@@ -1,44 +1,56 @@
-const createSelect = function(id, options) {
-  const select = document.getElementById(id)
-  const button = select.querySelector('.select__button')
-  const selectList = select.querySelector('.select__list')
+class Select {
+  constructor(params) {
+    this.id = params.id
+    this.data = params.data
+    this.select = document.getElementById(this.id)
+    this.button = this.select.querySelector('.select__button')
+    this.list = this.select.querySelector('.select__list')
+  }
 
-  options.forEach(item => {
-    let option = document.createElement('li')
-    option.className = 'select__item'
-    option.innerHTML = `<label class="select__label">
-                          <input class="select__input" type="radio" name="${id}" value="${item.value}" data-name="${item.name}">
-                          ${item.name}
-                        </label>`
+  init() {
+    // Создает список элементов селекта
+    this.data.forEach(item => {
+      // Создает разметку элемента
+      const option = document.createElement('li')
+      option.className = 'select__item'
+      option.innerHTML = `<label class="select__label">
+                            <input class="select__input" type="radio" name="${this.id}" value="${item.value}" data-name="${item.name}">
+                            ${item.name}
+                          </label>`
 
-    const radio = option.querySelector('.select__input')
+      // Выбирает элемент по умолчанию, если его default равен true
+      const radio = option.querySelector('.select__input')
 
-    if(item.default) {
-      radio.checked = true
-      button.textContent = item.name
-    }
-
-    radio.addEventListener('change', function() {
-      if (this.checked) {
-        button.textContent = this.getAttribute('data-name')
+      if(item.default) {
+        radio.checked = true
+        this.button.textContent = item.name
       }
+
+      // Меняет значение селекта при выборе элемента
+      radio.addEventListener('change', () => {
+        if (radio.checked) {
+          this.button.textContent = radio.getAttribute('data-name')
+
+          // ----> Обработчик значения селекта
+        }
+      })
+
+      // Добавляет элемент в список селекта
+      this.list.append(option)
     })
 
-    selectList.append(option)
-  })
+    // Закрывает селект при клике вне него и на оборот
+    window.addEventListener('click', (e) => {
+      if (e.target === this.select || this.select.contains(e.target)) {
+        this.list.style.display = 'block'
 
-  window.addEventListener('click', function(e) {
-    if (e.target === select || select.contains(e.target)) {
-      selectList.style.display = 'block'
-      // console.log(selectList.offsetWidth)
-
-      select.style.minWidth = selectList.offsetWidth + 'px'
-      select.classList.add('select_active')
-    } else {
-      selectList.style.display = 'none'
-      select.style.minWidth = 'max-content'
-      select.classList.remove('select_active')
-    }
-  })
-
+        this.select.style.minWidth = this.list.offsetWidth + 'px'
+        this.select.classList.add('select_active')
+      } else {
+        this.list.style.display = 'none'
+        this.select.style.minWidth = 'max-content'
+        this.select.classList.remove('select_active')
+      }
+    })
+  }
 }

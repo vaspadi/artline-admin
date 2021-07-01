@@ -232,27 +232,29 @@
 
   <script src="js/select.js"></script>
   <script>
-    const langSelectOptions = [
+    const langData = [
       {name: 'Русский', value: 'one', default: true},
       {name:'Русский', value: 'two'},
       {name: 'Французский', value: "three"}
     ]
-    
-    const categorySelectOptions = [
+    const categoryData = [
       {name: 'Инфлюенсеры', value: 'one', default: true},
       {name:'Инфлюенсеры', value: 'two'},
       {name: 'Тест', value: "three"}
     ]
-    
-    const countrySelectOptions = [
+    const countryData = [
       {name: 'Весь мир', value: 'one', default: true},
       {name:'Латвия', value: 'two'},
       {name: 'Украина', value: "three"}
     ]
 
-    createSelect('lang-select', langSelectOptions)
-    createSelect('category-select', categorySelectOptions)
-    createSelect('country-select', countrySelectOptions)
+    const langSelect = new Select({ id: 'lang-select', data: langData })
+    const categorySelect = new Select({ id: 'category-select', data: categoryData })
+    const countrySelect = new Select({ id: 'country-select', data: countryData })
+
+    langSelect.init()
+    categorySelect.init()
+    countrySelect.init()
   </script>
 </body>
 </html>

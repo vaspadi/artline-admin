@@ -198,14 +198,18 @@
 
   <script src="js/select.js"></script>
   <script>
-    const procentSelectOptions = [
+    const selectsId = ['procent-select', 'modal-select']
+    const data = [
       {name: '100', value: 'one', default: true},
       {name:'70', value: 'two'},
       {name: '10', value: "three"}
     ]
 
-    createSelect('procent-select', procentSelectOptions)
-    createSelect('modal-select', procentSelectOptions)
+    selectsId.forEach(id => {
+      const newSelect = new Select({id, data})
+      
+      newSelect.init()
+    })
   </script>
 </body>
 </html>
