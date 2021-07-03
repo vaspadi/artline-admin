@@ -160,7 +160,7 @@
               <td><button class="modal__refresh"></button></td>
               <td>
                 <div class="multiselect-wrapper">
-                  <div class="multiselect multiselect_no-active modal__multiselect">
+                  <div class="multiselect multiselect_no-active modal__multiselect" id="multiselect">
                     <div class="multiselect__search-wrapper">
                       <input type="search" class="multiselect__search">
                     </div>
@@ -198,18 +198,29 @@
 
   <script src="js/select.js"></script>
   <script>
+    // Инициализация селектов
     const selectsId = ['procent-select', 'modal-select']
-    const data = [
+    const selectData = [
       {name: '100', value: 'one', default: true},
       {name:'70', value: 'two'},
       {name: '10', value: "three"}
     ]
 
     selectsId.forEach(id => {
-      const newSelect = new Select({id, data})
+      const newSelect = new Select({id, data: selectData})
       
       newSelect.init()
     })
+
+    // Инициализация мультиселектов
+    const multiselectData = [
+      {value: 'one', name: 'QUPPY 1', img: 'img/stickers/img.jpg'},
+      {value: 'two', name: 'QUPPY 2', img: 'img/stickers/img.jpg'},
+      {value: 'tree', name: 'QUPPY 3', img: 'img/stickers/img.jpg'}
+    ]
+
+    const multiselect = new Multiselect({ id: 'multiselect', data: multiselectData })
+    multiselect.init()
   </script>
 </body>
 </html>
