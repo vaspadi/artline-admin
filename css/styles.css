@@ -152,6 +152,9 @@ table {
 .input_big {
   height: 100%;
 }
+.input_caps {
+  text-transform: uppercase;
+}
 .input:hover, .input:focus {
   box-shadow: 0 0 0 0.15em #CF2136;
 }
@@ -1050,6 +1053,7 @@ table {
   justify-content: space-between;
   padding-left: 1.176em;
   padding-right: 3.529em;
+  margin: 2rem 0 1.3rem;
 }
 .information__info-block {
   flex-basis: 64%;

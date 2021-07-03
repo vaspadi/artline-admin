@@ -111,21 +111,38 @@
           <form action="" class="information__form">
             <div class="information__row">
               <div class="information__id-block">
-                <input type="text" class="input" placeholder="Id">
+                <input type="text" class="input input_caps" placeholder="Id">
                 <div class="information__id-block-radio">
                   <label class="radio">
-                    <input class="radio__input" value="pay" type="radio" name="price">
+                    <input class="radio__input" value="not-disabled" type="radio" name="price">
                     <span class="radio__pseudo-radio"></span>
                     Платный
                   </label>
 
                   <label class="radio">
-                    <input class="radio__input" value="price" type="radio" name="price" checked>
+                    <input class="radio__input" value="disabled" type="radio" name="price" checked>
                     <span class="radio__pseudo-radio"></span>
                     Бесплатный
                   </label>
                 </div>
-                <input type="text" class="input" id="pay-id" disabled placeholder="Id покупки">
+
+                <input type="text" class="input input_caps" id="pay-id" disabled placeholder="Id покупки">
+
+                <div class="information__id-block-radio">
+                  <label class="radio">
+                    <input class="radio__input" value="not-disabled" type="radio" name="public">
+                    <span class="radio__pseudo-radio"></span>
+                    Публичный
+                  </label>
+
+                  <label class="radio">
+                    <input class="radio__input" value="disabled" type="radio" name="public" checked>
+                    <span class="radio__pseudo-radio"></span>
+                    Скрытый
+                  </label>
+                </div>
+
+                <input type="text" class="input input_caps" id="public-code" disabled placeholder="GUT001">
               </div>
               
               <div class="information__info-block">
@@ -232,6 +249,7 @@
 
   <script src="js/select.js"></script>
   <script>
+    // Инициализация селектов
     const langData = [
       {name: 'Русский', value: 'one', default: true},
       {name:'Русский', value: 'two'},
@@ -255,6 +273,13 @@
     langSelect.init()
     categorySelect.init()
     countrySelect.init()
+
+    // Инициализация инпутов с переменным состоянием
+    const priceRadioInput = new RadioInput({ radioName: 'price', inputId: 'pay-id' })
+    const publicRadioInput = new RadioInput({ radioName: 'public', inputId: 'public-code' })
+    
+    priceRadioInput.init()
+    publicRadioInput.init()
   </script>
 </body>
 </html>
