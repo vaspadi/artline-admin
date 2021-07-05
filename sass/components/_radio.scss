@@ -10,6 +10,25 @@
     }
   }
 
+  &_disabled {
+    opacity: 0.6;
+
+    &:hover,
+    &:focus {
+      // .radio__input {
+      //   &[type=radio]:checked+span,
+      //   &[type=checkbox]:checked+span {
+      //     background-color: $active;
+      //   }
+      // }
+
+      .radio__pseudo-radio {
+        background-color: darken($page-bg, 10%);
+        border-color: darken($page-bg, 10%);
+      }
+    }
+  }
+
   &__input {
     position: absolute;
     display: block;

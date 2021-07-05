@@ -133,6 +133,7 @@ table {
   }
 }
 .input {
+  width: 100%;
   font-size: inherit;
   background-color: #EDEDED;
   padding: 0.8em;
@@ -471,6 +472,13 @@ table {
 .radio:hover .radio__pseudo-radio, .radio:focus .radio__pseudo-radio {
   background-color: #c6c6c6;
   border-color: #c6c6c6;
+}
+.radio_disabled {
+  opacity: 0.6;
+}
+.radio_disabled:hover .radio__pseudo-radio, .radio_disabled:focus .radio__pseudo-radio {
+  background-color: #e0e0e0;
+  border-color: #e0e0e0;
 }
 .radio__input {
   position: absolute;

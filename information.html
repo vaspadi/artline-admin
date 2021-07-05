@@ -112,37 +112,37 @@
             <div class="information__row">
               <div class="information__id-block">
                 <input type="text" class="input input_caps" placeholder="Id">
-                <div class="information__id-block-radio">
-                  <label class="radio">
-                    <input class="radio__input" value="not-disabled" type="radio" name="price">
-                    <span class="radio__pseudo-radio"></span>
-                    Платный
-                  </label>
-
-                  <label class="radio">
-                    <input class="radio__input" value="disabled" type="radio" name="price" checked>
-                    <span class="radio__pseudo-radio"></span>
-                    Бесплатный
-                  </label>
+                <div id="price-input">
+                  <div class="information__id-block-radio">
+                    <label class="radio">
+                      <input class="radio__input" value="not-disabled" type="radio" name="price">
+                      <span class="radio__pseudo-radio"></span>
+                      Платный
+                    </label>
+                    <label class="radio" id="price-input">
+                      <input class="radio__input" value="disabled" type="radio" name="price" checked>
+                      <span class="radio__pseudo-radio"></span>
+                      Бесплатный
+                    </label>
+                  </div>
+                  <input type="text" class="input input_caps" disabled placeholder="Id покупки">
                 </div>
 
-                <input type="text" class="input input_caps" id="pay-id" disabled placeholder="Id покупки">
-
-                <div class="information__id-block-radio">
-                  <label class="radio">
-                    <input class="radio__input" value="not-disabled" type="radio" name="public">
-                    <span class="radio__pseudo-radio"></span>
-                    Публичный
-                  </label>
-
-                  <label class="radio">
-                    <input class="radio__input" value="disabled" type="radio" name="public" checked>
-                    <span class="radio__pseudo-radio"></span>
-                    Скрытый
-                  </label>
+                <div id="public-input">
+                  <div class="information__id-block-radio">
+                    <label class="radio">
+                      <input class="radio__input" value="disabled" type="radio" name="public">
+                      <span class="radio__pseudo-radio"></span>
+                      Публичный
+                    </label>
+                    <label class="radio">
+                      <input class="radio__input" value="not-disabled" type="radio" name="public" checked>
+                      <span class="radio__pseudo-radio"></span>
+                      Скрытый
+                    </label>
+                  </div>
+                  <input type="text" class="input input_caps" placeholder="GUT001">
                 </div>
-
-                <input type="text" class="input input_caps" id="public-code" disabled placeholder="GUT001">
               </div>
               
               <div class="information__info-block">
@@ -275,11 +275,20 @@
     countrySelect.init()
 
     // Инициализация инпутов с переменным состоянием
-    const priceRadioInput = new RadioInput({ radioName: 'price', inputId: 'pay-id' })
-    const publicRadioInput = new RadioInput({ radioName: 'public', inputId: 'public-code' })
+    const priceRadioInput = new RadioInput({ id: 'price-input', })
+    const publicRadioInput = new RadioInput({ id: 'public-input' })
     
     priceRadioInput.init()
     publicRadioInput.init()
+
+    // Активирует или на оборот второй инпут, если у первого выбран "Платный"
+    const priceRadio = document.querySelectorAll('input[name="price"]')
+
+    priceRadio.forEach(radio => {
+      radio.addEventListener('change', function() {
+        this.value === 'disabled' ? publicRadioInput.setActive() : publicRadioInput.setDisabled()
+      })
+    })
   </script>
 </body>
 </html>
