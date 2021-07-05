@@ -289,6 +289,10 @@
         this.value === 'disabled' ? publicRadioInput.setActive() : publicRadioInput.setDisabled()
       })
     })
+
+    // Инициализация кнопки добавления рекламного баннера
+    const banner = new Banner({checkbox: 'banner-checkbox', banner: 'banner-button'})
+    banner.init()
   </script>
 </body>
 </html>

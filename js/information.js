@@ -1,16 +1,21 @@
-// window.addEventListener('DOMContentLoaded', function() {
+class Banner {
+  constructor(params) {
+    this.checkbox = document.getElementById(params.checkbox)
+    this.banner = document.getElementById(params.banner)
+  }
 
-//   const bannerCheckbox = document.getElementById('banner-checkbox')
-//   const bannerButton = document.getElementById('banner-button')
+  init() {
+    this.checkbox.addEventListener('change', () => {
+      this.banner.disabled = !this.checkbox.checked
+    })
+  }
+}
 
-//   bannerCheckbox.addEventListener('change', function() {
-//     if (this.checked) {
-//       bannerButton.disabled = false
-//     } else {
-//       bannerButton.disabled = true
-//     }
-//   })
-// })
+
+  const bannerCheckbox = document.getElementById('banner-checkbox')
+  const bannerButton = document.getElementById('banner-button')
+
+
 
 class RadioInput {
   constructor(params) {
