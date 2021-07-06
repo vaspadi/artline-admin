@@ -729,6 +729,64 @@ table {
   margin-right: 2rem;
 }
 
+.small-modal {
+  max-width: 60rem;
+  width: 100%;
+  background-color: #FFFFFF;
+  padding: 4rem;
+  border-radius: 1.16em;
+  margin: 0 1.5rem;
+  cursor: default;
+}
+.small-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 1.7rem;
+  background-color: rgba(0, 0, 0, 0.43);
+  cursor: pointer;
+  z-index: 30;
+}
+.small-modal__text {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 5rem;
+}
+.small-modal__row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.small-modal__close {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #CF2136;
+  line-height: 1;
+  text-transform: lowercase;
+  background-color: transparent;
+  padding: 1.4rem 2rem;
+  border: none;
+  border-radius: 0.7em;
+  cursor: pointer;
+}
+.small-modal__close:hover {
+  background-color: #EDEDED;
+}
+.small-modal__submit {
+  min-width: 16rem;
+  text-transform: uppercase;
+  border-radius: 0.7em;
+  margin-left: 4rem;
+}
+
 .navbar {
   position: fixed;
   top: 0;

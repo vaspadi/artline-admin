@@ -97,7 +97,7 @@
       <div class="section create__section">
         <header class="section__header">
           <p class="create__warning">Не все поля заполнены!</p>
-          <a class="button section__button">Сохранить</a>
+          <a class="button section__button button_green" id="small-modal-button">Сохранить</a>
         </header>
 
         <nav class="create__nav">
@@ -246,6 +246,7 @@
 
   <script src="js/radio-input.js"></script>
   <script src="js/banner.js"></script>
+  <script src="js/small-modal.js"></script>
   <script src="js/menu.js"></script>
 
   <script src="js/select.js"></script>
@@ -294,6 +295,16 @@
     // Инициализация кнопки добавления рекламного баннера
     const banner = new Banner({checkbox: 'banner-checkbox', banner: 'banner-button'})
     banner.init()
+
+    // Инициализация маленьких модалок
+    const text = 'Вы точно хотите опубликовать данный стикерпак?'
+    const smallModal = new SmallModal({ text })
+
+    const smallModalButton = document.getElementById('small-modal-button')
+
+    smallModalButton.addEventListener('click', function() {
+      smallModal.show()
+    })
   </script>
 </body>
 </html>
