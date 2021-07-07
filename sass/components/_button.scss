@@ -23,6 +23,24 @@
   &:focus {
     background-color: darken($active, 10%);
   }
+
+  &_green {
+    background-color: #73B709;
+      
+    &:hover,
+    &:focus {
+      background-color: darken(#73B709, 10%);
+    }
+  }
+
+  &_orange {
+    background-color: #F3B738;
+
+    &:hover,
+    &:focus {
+      background-color: darken(#F3B738, 10%);
+    }
+  }
   
   &_bottom-right {
     border-radius: 0.5em 0 0.972em 0;

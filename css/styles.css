@@ -273,6 +273,18 @@ table {
 .button:hover, .button:focus {
   background-color: #a31a2b;
 }
+.button_green {
+  background-color: #73B709;
+}
+.button_green:hover, .button_green:focus {
+  background-color: #548607;
+}
+.button_orange {
+  background-color: #F3B738;
+}
+.button_orange:hover, .button_orange:focus {
+  background-color: #eaa30e;
+}
 .button_bottom-right {
   border-radius: 0.5em 0 0.972em 0;
 }
